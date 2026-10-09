@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>项目 · 施组工作台</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<div class="app">
+<aside class="side">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">施</span><span><span class="brand-name" style="display:block">施组工作台</span><span class="brand-sub">技术标评审与报价</span></span></a>
+<button class="search" type="button"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>搜索或跳转</span><kbd>Ctrl K</kbd></button>
+<nav aria-label="全局"><a class="nav" href="index.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg><span>项目</span></a><a class="nav" href="metrics.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>度量</span></a></nav>
+<p class="side-note">AI 产生的内容均为建议，须经人工确认</p>
+<div class="user"><span class="avatar" aria-hidden="true">王</span><div><div style="font-weight:500">王工</div></div></div></aside>
+<main class="main" id="main">
+
+
+<header class="head">
+  <div><h1>项目</h1><p class="lead">5 个进行中，1 个有未处理的否决风险</p></div>
+  <button class="btn btn-primary" type="button" id="new">新建项目</button>
+</header>
+
+<ul class="card plist" aria-label="项目清单">
+  <li class="prow">
+    <div><h2 class="pname"><a href="report.html">广德市污水管网改造及新建工程</a></h2><p class="small muted urgent">一标段 · 广德 · 市政排水 · 10 月 14 日 09:30 · 还剩 5 天</p></div>
+    <dl class="pfacts"><div><dt>否决风险</dt><dd class="risk">4 个未处理</dd></div><div><dt>预计技术分</dt><dd class="num">35.5–49.5<small>满分 60 分</small></dd></div><div><dt>状态</dt><dd>问题待处理</dd></div></dl>
+    <div class="pnext"><span class="small muted">处理 4 个可能被否决或不满足强制要求的问题</span><a class="sbtn sm-btn" href="findings.html#disqualification">处理否决风险</a></div>
+  </li>
+  <li class="prow">
+    <div><h2 class="pname"><a href="report.html">城北片区雨污分流工程</a></h2><p class="small muted urgent">二标段 · 10 月 12 日 14:00 · 还剩 3 天</p></div>
+    <dl class="pfacts"><div><dt>否决风险</dt><dd>未发现</dd></div><div><dt>预计技术分</dt><dd class="num">44.0–50.0<small>只覆盖 52 / 60 分</small></dd></div><div><dt>状态</dt><dd>可登记提交</dd></div></dl>
+    <div class="pnext"><span class="small muted">登记提交</span><a class="sbtn sm-btn" href="submit.html">登记提交</a></div>
+  </li>
+  <li class="prow">
+    <div><h2 class="pname"><a href="materials.html">某市二期道路排水改造施工</a></h2><p class="small muted">10 月 28 日</p></div>
+    <dl class="pfacts"><div><dt>否决风险</dt><dd>尚未评审</dd></div><div><dt>预计技术分</dt><dd class="num">尚未评审</dd></div><div><dt>状态</dt><dd>评审中</dd></div></dl>
+    <div class="pnext"><span class="small muted">正在评审</span><a class="sbtn sm-btn" href="materials.html">查看进度</a></div>
+  </li>
+  <li class="prow">
+    <div><h2 class="pname"><a href="pipeline.html">滨河新区排水管网工程</a></h2><p class="small muted">10 月 20 日</p></div>
+    <dl class="pfacts"><div><dt>否决风险</dt><dd>尚未评审</dd></div><div><dt>预计技术分</dt><dd class="num">尚未评审</dd></div><div><dt>状态</dt><dd>评审中断</dd></div></dl>
+    <div class="pnext"><span class="small muted">评审中断，重新评审</span><a class="sbtn sm-btn" href="pipeline.html">重新评审</a></div>
+  </li>
+  <li class="prow">
+    <div><h2 class="pname"><a href="report.html">西湖路雨水管网提标工程</a></h2><p class="small muted">10 月 7 日已提交</p></div>
+    <dl class="pfacts"><div><dt>否决风险</dt><dd>未发现</dd></div><div><dt>预计技术分</dt><dd class="num">41.0–49.0<small>满分 60 分</small></dd></div><div><dt>状态</dt><dd>已提交</dd></div></dl>
+    <div class="pnext"><span class="small muted">登记开标结果</span><a class="sbtn sm-btn" href="submit.html#result">登记结果</a></div>
+  </li>
+  <li class="prow is-closed">
+    <div><h2 class="pname"><a href="report.html">经开区南片排水管网工程</a></h2><p class="small muted">9 月 12 日已归档 · 入围，未中标，官方技术分 46.0</p></div>
+    <dl class="pfacts"><div><dt>否决风险</dt><dd>未发现</dd></div><div><dt>预计技术分</dt><dd class="num">42.5–48.5</dd></div><div><dt>状态</dt><dd>已归档</dd></div></dl>
+    <div class="pnext"><a class="sbtn sm-btn" href="report.html">查看报告</a></div>
+  </li>
+</ul>
+<p class="small muted">预计技术分没有用官方成绩校准，只看相对高低。本稿使用虚构的项目与数据。</p>
+
+<dialog id="dlg" aria-labelledby="dt">
+  <form method="dialog" class="pad stack" style="padding:24px">
+    <h2 id="dt" style="font-size:20px">新建项目</h2>
+    <div class="field"><label for="n1">项目名称</label><input id="n1" type="text" placeholder="例如：某市排水管网改造工程"></div>
+    <div class="field"><label for="n3">投标截止（选填）</label><input id="n3" type="datetime-local"></div>
+    <a class="sm" href="#">填写标段、招标编号等更多信息</a>
+    <div class="row" style="justify-content:flex-end"><button class="sbtn" value="cancel">取消</button><button class="btn btn-primary" value="ok">建立并上传资料</button></div>
+  </form>
+</dialog>
+
+</main>
+</div>
+<script>
+(function(){
+  var d=document.getElementById('dlg');
+  document.getElementById('new').onclick=function(){if(d.showModal)d.showModal()};
+})();
+</script>
+</body>
+</html>

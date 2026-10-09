@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>问题 · 施组工作台</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<div class="app">
+<aside class="side">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">施</span><span><span class="brand-name" style="display:block">施组工作台</span><span class="brand-sub">技术标评审与报价</span></span></a>
+<button class="search" type="button"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>搜索或跳转</span><kbd>Ctrl K</kbd></button>
+<nav aria-label="全局"><a class="nav" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg><span>项目</span></a><a class="nav" href="metrics.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>度量</span></a></nav>
+<div class="proj"><a class="proj-name" href="report.html">广德市污水管网改造及新建工程</a><div><span class="chip c-warn">! 问题待处理</span></div><div class="proj-meta">截止 10 月 14 日 09:30 · 第 3 轮</div></div>
+<nav aria-label="项目"><div class="grp">项目</div><a class="nav" href="report.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>报告</span></a><a class="nav" href="findings.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.01"/></svg><span>问题</span><span class="badge alert" aria-label="11 条问题未处理">11</span></a><a class="nav" href="rules.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg><span>依据</span><span class="badge" aria-label="2 条规则未确认">2</span></a><a class="nav" href="price.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5c0-1 1-1.7 2.5-1.7s2.5.7 2.5 1.7-1 1.5-2.5 1.8-2.5.8-2.5 1.8 1 1.7 2.5 1.7 2.5-.7 2.5-1.7"/></svg><span>报价</span></a><a class="nav" href="submit.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-3-7z"/></svg><span>提交与结果</span></a><a class="nav" href="materials.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>资料</span></a></nav>
+<nav class="side-sep" aria-label="工具"><div class="grp">工具</div><span class="nav static" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><span>检索</span></span><a class="nav" href="settings.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg><span>设置</span></a></nav>
+<p class="side-note">AI 产生的内容均为建议，须经人工确认</p>
+<div class="user"><span class="avatar" aria-hidden="true">王</span><div><div style="font-weight:500">王工</div></div></div></aside>
+<main class="main" id="main">
+<div class="crumb"><a href="index.html">全部项目</a> / <a href="report.html">广德市污水管网改造及新建工程</a> / 问题</div>
+
+<header class="head">
+  <div><h1>问题</h1><p class="lead">逐条核实：成立的确认，不成立的驳回。处理完一条自动跳到下一条。</p></div>
+</header>
+<div class="banner danger" role="status"><span><b>废标／否决风险未处理 1 条。</b>强制性要求问题未处理 3 条，登记提交前须全部处理。</span></div>
+
+<div class="tabs" role="tablist" aria-label="问题分类"><button class="tab" role="tab" id="t-disqualification" aria-controls="p-disqualification" aria-selected="false" data-cat="disqualification" tabindex="-1">废标／否决风险<span class="n hot">1<span class="vh"> 条未处理，</span>/2<span class="vh"> 条</span></span></button><button class="tab" role="tab" id="t-response" aria-controls="p-response" aria-selected="false" data-cat="response" tabindex="-1">强制性要求<span class="n">3<span class="vh"> 条未处理，</span>/4<span class="vh"> 条</span></span></button><button class="tab" role="tab" id="t-consistency" aria-controls="p-consistency" aria-selected="false" data-cat="consistency" tabindex="-1">前后矛盾<span class="n">2<span class="vh"> 条未处理，</span>/3<span class="vh"> 条</span></span></button><button class="tab" role="tab" id="t-scope" aria-controls="p-scope" aria-selected="false" data-cat="scope" tabindex="-1">范围残留<span class="n">2<span class="vh"> 条未处理，</span>/2<span class="vh"> 条</span></span></button><button class="tab" role="tab" id="t-improvement" aria-controls="p-improvement" aria-selected="false" data-cat="improvement" tabindex="-1">改进建议<span class="n">3<span class="vh"> 条未处理，</span>/4<span class="vh"> 条</span></span></button></div>
+<div class="row" role="group" aria-label="状态筛选"><span class="sm muted">状态</span>
+  <button class="sbtn sm-btn" type="button" data-flt="all" aria-pressed="true">全部</button><button class="sbtn sm-btn" type="button" data-flt="open" aria-pressed="false">未处理</button><button class="sbtn sm-btn" type="button" data-flt="done" aria-pressed="false">已解决</button></div>
+
+<div class="split">
+  <section class="fixed" aria-label="问题列表" style="flex-basis:300px"><div class="card list" id="p-disqualification" role="tabpanel" aria-labelledby="t-disqualification" hidden><button type="button" class="li" data-f="f1" data-open="1"><span class="sev crit" title="严重"><span aria-hidden="true">严</span><span class="vh">严重</span></span><span style="min-width:0"><span class="t">缺少雨季、冬季施工专项措施</span><span class="m">规则核对 · 第 58 页 · 待确认</span></span></button><button type="button" class="li done" data-f="f2" data-open="0"><span class="sev crit" title="严重"><span aria-hidden="true">严</span><span class="vh">严重</span></span><span style="min-width:0"><span class="t">总工期承诺超过 180 日历天</span><span class="m">规则核对 · 第 5 页 · 已解决</span></span></button></div><div class="card list" id="p-response" role="tabpanel" aria-labelledby="t-response" hidden><button type="button" class="li" data-f="f3" data-open="1"><span class="sev crit" title="严重"><span aria-hidden="true">严</span><span class="vh">严重</span></span><span style="min-width:0"><span class="t">DN600 管道埋深低于补遗要求</span><span class="m">规则核对 · 第 36 页 · 待确认</span></span></button><button type="button" class="li" data-f="f4" data-open="1"><span class="sev norm" title="一般"><span aria-hidden="true">中</span><span class="vh">一般</span></span><span style="min-width:0"><span class="t">项目经理资质无法确认</span><span class="m">规则核对 · 第 8 页 · 暂缓，待补事实 · 规则未确认</span></span></button><button type="button" class="li" data-f="f5" data-open="1"><span class="sev norm" title="一般"><span aria-hidden="true">中</span><span class="vh">一般</span></span><span style="min-width:0"><span class="t">施工期间交通组织无法判断</span><span class="m">规则核对 · 第 36 页 · 待确认</span></span></button><button type="button" class="li done" data-f="f6" data-open="0"><span class="sev norm" title="一般"><span aria-hidden="true">中</span><span class="vh">一般</span></span><span style="min-width:0"><span class="t">管道接口形式未写明</span><span class="m">规则核对 · 第 38 页 · 已解决</span></span></button></div><div class="card list" id="p-consistency" role="tabpanel" aria-labelledby="t-consistency" hidden><button type="button" class="li" data-f="f7" data-open="1"><span class="sev norm" title="一般"><span aria-hidden="true">中</span><span class="vh">一般</span></span><span style="min-width:0"><span class="t">总工期 175 天与横道图 180 天不一致</span><span class="m">一致性检测 · 第 52 页 · 待确认</span></span></button><button type="button" class="li" data-f="f8" data-open="1"><span class="sev norm" title="一般"><span aria-hidden="true">中</span><span class="vh">一般</span></span><span style="min-width:0"><span class="t">DN600 管段长度前后取值不同</span><span class="m">一致性检测 · 第 40 页 · 已确认，待改稿</span></span></button><button type="button" class="li done" data-f="f9" data-open="0"><span class="sev norm" title="一般"><span aria-hidden="true">中</span><span class="vh">一般</span></span><span style="min-width:0"><span class="t">项目经理姓名前后不一致</span><span class="m">一致性检测 · 第 87 页 · 已解决</span></span></button></div><div class="card list" id="p-scope" role="tabpanel" aria-labelledby="t-scope" hidden><button type="button" class="li" data-f="f10" data-open="1"><span class="sev norm" title="一般"><span aria-hidden="true">中</span><span class="vh">一般</span></span><span style="min-width:0"><span class="t">正文出现“泵站”：招标文件及补遗没有该工程对象</span><span class="m">范围残留检测 · 第 61 页 · 待确认</span></span></button><button type="button" class="li" data-f="f11" data-open="1"><span class="sev norm" title="一般"><span aria-hidden="true">中</span><span class="vh">一般</span></span><span style="min-width:0"><span class="t">正文出现“沉井”施工方案：招标范围没有该工程对象</span><span class="m">范围残留检测 · 第 67 页 · 待确认</span></span></button></div><div class="card list" id="p-improvement" role="tabpanel" aria-labelledby="t-improvement" hidden><button type="button" class="li" data-f="f12" data-open="1"><span class="sev imp" title="建议"><span aria-hidden="true">建</span><span class="vh">建议</span></span><span style="min-width:0"><span class="t">进度计划未体现关键线路</span><span class="m">评分条款 · 8 分 · 第 52 页 · 待确认</span></span></button><button type="button" class="li" data-f="f13" data-open="1"><span class="sev imp" title="建议"><span aria-hidden="true">建</span><span class="vh">建议</span></span><span style="min-width:0"><span class="t">环境保护与扬尘治理可补充监测方案</span><span class="m">评分条款 · 5 分 · 第 71 页 · 待确认 · 规则未确认</span></span></button><button type="button" class="li" data-f="f14" data-open="1"><span class="sev imp" title="建议"><span aria-hidden="true">建</span><span class="vh">建议</span></span><span style="min-width:0"><span class="t">质量保证措施可补充检测频次</span><span class="m">评分条款 · 8 分 · 第 46 页 · 已确认，待改稿</span></span></button><button type="button" class="li done" data-f="f15" data-open="0"><span class="sev imp" title="建议"><span aria-hidden="true">建</span><span class="vh">建议</span></span><span style="min-width:0"><span class="t">安全文明施工费用口径</span><span class="m">评分条款 · 8 分 · 第 90 页 · 已解决</span></span></button></div>
+    <p class="small muted" style="margin-top:8px">共 <span id="cnt"></span> 条</p></section>
+  <section class="grow" aria-label="问题详情" style="flex-basis:420px"><div class="stack" id="d-f1" role="tabpanel" hidden>
+<article class="card" style="overflow:hidden">
+  <div style="padding:20px 24px 0" class="stack" >
+    <div class="row"><span class="chip c-danger">严 严重</span><span style="margin-left:auto" class="chip c-warn">待确认</span></div>
+    <h2 style="font-size:20px;line-height:1.5">缺少雨季、冬季施工专项措施</h2>
+    <div class="small muted" role="note">状态流转：待确认 › 已确认 › 采纳改稿建议 › 上传新正文 › 复核 › 已解决</div>
+  </div>
+  <div style="padding:16px 24px 20px" class="stack">
+    <div class="grid g2"><div style="padding:14px 16px;border-radius:10px;background:var(--bg)"><div class="small" style="font-weight:700;color:var(--muted)">招标文件要求 · 招标文件 第 3 章 第 12 页</div><div class="quote" style="margin-top:8px;font-size:14px">“投标人的施工组织设计应包含雨季及冬季施工专项措施，未包含的，评标委员会按未实质性响应招标文件处理。”</div></div><div style="padding:14px 16px;border-radius:10px;background:var(--danger-bg)"><div class="small" style="font-weight:700;color:var(--danger-ink)">技术标 第 58 页</div><div class="quote" style="margin-top:8px;font-size:14px">“雨季施工注意防汛。”（全文未检索到雨季或冬季施工专项章节）</div></div></div>
+    <div class="banner info" style="align-items:flex-start;display:block"><div class="row" style="font-weight:700"><span class="ai">AI</span>分析</div><p style="margin-top:6px;line-height:1.8">正文只有一句概括性表述，没有专项措施，也没有冬季施工内容。该条款属废标条款，缺项即可能被判未实质性响应。</p></div>
+  </div>
+  <div style="border-top:1px solid var(--line);background:var(--sunken);padding:16px 24px" class="row"><button class="btn btn-primary" type="button">确认问题</button><button class="sbtn" type="button">请求补充事实</button><button class="sbtn" type="button">暂缓</button><button class="sbtn danger" type="button">驳回</button>
+    </div>
+</article>
+<div class="card pad stack" style="gap:10px"><div class="row"><h3 style="font-size:16px">改稿建议</h3><span class="ai" title="模型生成">AI</span><span class="small muted">确认问题后可生成；系统不改写 PDF，采纳后在新正文中修改并上传。</span></div><div class="quote" style="font-size:14px;line-height:2;padding:14px 16px;border-radius:10px;border:1px solid var(--line)">补充“雨季、冬季施工专项措施”一节，写明排水降水、材料防护、工序调整和应急安排。</div></div>
+</div><div class="stack" id="d-f2" role="tabpanel" hidden>
+<article class="card" style="overflow:hidden">
+  <div style="padding:20px 24px 0" class="stack" >
+    <div class="row"><span class="chip c-danger">严 严重</span><span style="margin-left:auto" class="chip c-ok">已解决</span></div>
+    <h2 style="font-size:20px;line-height:1.5">总工期承诺超过 180 日历天</h2>
+    <div class="small muted" role="note">状态流转：待确认 › 已确认 › 采纳改稿建议 › 上传新正文 › 复核 › 已解决</div>
+  </div>
+  <div style="padding:16px 24px 20px" class="stack">
+    <div class="grid g2"><div style="padding:14px 16px;border-radius:10px;background:var(--bg)"><div class="small" style="font-weight:700;color:var(--muted)">招标文件要求 · 招标文件 第 3 章 第 13 页</div><div class="quote" style="margin-top:8px;font-size:14px">“投标工期超过 180 日历天的，按否决处理。”</div></div><div style="padding:14px 16px;border-radius:10px;background:var(--ok-bg)"><div class="small" style="font-weight:700;color:var(--ok-ink)">技术标 第 5 页</div><div class="quote" style="margin-top:8px;font-size:14px">“本工程总工期 175 日历天。”</div></div></div>
+    <div class="banner info" style="align-items:flex-start;display:block"><div class="row" style="font-weight:700"><span class="ai">AI</span>分析</div><p style="margin-top:6px;line-height:1.8">第 2 轮评审时正文写 190 日历天，已在技术标第 4 版修正为 175 日历天，本轮核对为满足。</p></div>
+  </div>
+  <div style="border-top:1px solid var(--line);background:var(--sunken);padding:16px 24px" class="row"><button class="sbtn" type="button">重新打开</button>
+    </div>
+</article>
+
+</div><div class="stack" id="d-f3" role="tabpanel" hidden>
+<article class="card" style="overflow:hidden">
+  <div style="padding:20px 24px 0" class="stack" >
+    <div class="row"><span class="chip c-danger">严 严重</span><span style="margin-left:auto" class="chip c-warn">待确认</span></div>
+    <h2 style="font-size:20px;line-height:1.5">DN600 管道埋深低于补遗要求</h2>
+    <div class="small muted" role="note">状态流转：待确认 › 已确认 › 采纳改稿建议 › 上传新正文 › 复核 › 已解决</div>
+  </div>
+  <div style="padding:16px 24px 20px" class="stack">
+    <div class="grid g2"><div style="padding:14px 16px;border-radius:10px;background:var(--bg)"><div class="small" style="font-weight:700;color:var(--muted)">招标文件要求 · 补遗 1 第 2 页</div><div class="quote" style="margin-top:8px;font-size:14px">“DN500 及以上排水管道覆土厚度不应小于 1.8 m。”</div></div><div style="padding:14px 16px;border-radius:10px;background:var(--danger-bg)"><div class="small" style="font-weight:700;color:var(--danger-ink)">技术标 第 36 页</div><div class="quote" style="margin-top:8px;font-size:14px">“DN600 管道埋深按 1.5 m 控制。”</div></div></div>
+    <div class="banner info" style="align-items:flex-start;display:block"><div class="row" style="font-weight:700"><span class="ai">AI</span>分析</div><p style="margin-top:6px;line-height:1.8">DN600 属于“DN500 及以上”，要求覆土厚度不小于 1.8 m；正文为 1.5 m，低于强制性要求，可能被判不符合。</p></div>
+  </div>
+  <div style="border-top:1px solid var(--line);background:var(--sunken);padding:16px 24px" class="row"><button class="btn btn-primary" type="button">确认问题</button><button class="sbtn" type="button">请求补充事实</button><button class="sbtn" type="button">暂缓</button><button class="sbtn danger" type="button">驳回</button>
+    </div>
+</article>
+<div class="card pad stack" style="gap:10px"><div class="row"><h3 style="font-size:16px">改稿建议</h3><span class="ai" title="模型生成">AI</span><span class="small muted">确认问题后可生成；系统不改写 PDF，采纳后在新正文中修改并上传。</span></div><div class="diff quote" style="font-size:14px;line-height:2;padding:14px 16px;border-radius:10px;border:1px solid var(--line)">DN600 管道埋深按 <del>1.5 m</del><ins>不小于 1.8 m</ins> 控制。</div></div>
+</div><div class="stack" id="d-f4" role="tabpanel" hidden>
+<article class="card" style="overflow:hidden">
+  <div style="padding:20px 24px 0" class="stack" >
+    <div class="row"><span class="small muted">依据的规则还没核对，暂按原文判断</span><span style="margin-left:auto" class="chip c-muted">暂缓，待补事实</span></div>
+    <h2 style="font-size:20px;line-height:1.5">项目经理资质无法确认</h2>
+    <div class="small muted" role="note">状态流转：待确认 › 已确认 › 采纳改稿建议 › 上传新正文 › 复核 › 已解决</div>
+  </div>
+  <div style="padding:16px 24px 20px" class="stack">
+    <div class="grid g2"><div style="padding:14px 16px;border-radius:10px;background:var(--bg)"><div class="small" style="font-weight:700;color:var(--muted)">招标文件要求 · 招标文件 第 3 章 第 14 页</div><div class="quote" style="margin-top:8px;font-size:14px">“项目经理须具备一级建造师（市政公用工程）注册证书及有效的安全生产考核合格证（B 证）。”</div></div><div style="padding:14px 16px;border-radius:10px;background:var(--danger-bg)"><div class="small" style="font-weight:700;color:var(--danger-ink)">技术标 第 8 页</div><div class="quote" style="margin-top:8px;font-size:14px">“项目经理：赵某某，一级建造师。”（未写专业、证书编号和 B 证）</div></div></div>
+    <div class="banner info" style="align-items:flex-start;display:block"><div class="row" style="font-weight:700"><span class="ai">AI</span>分析</div><p style="margin-top:6px;line-height:1.8">正文信息不足，无法判断是否满足。该规则尚未确认，评审暂按原文判断。需要补充事实：项目经理的专业、证书编号和 B 证编号。</p></div>
+  </div>
+  <div style="border-top:1px solid var(--line);background:var(--sunken);padding:16px 24px" class="row"><button class="btn btn-primary" type="button">确认问题</button><button class="sbtn" type="button">请求补充事实</button><button class="sbtn danger" type="button">驳回</button>
+    </div>
+</article>
+
+</div><div class="stack" id="d-f5" role="tabpanel" hidden>
+<article class="card" style="overflow:hidden">
+  <div style="padding:20px 24px 0" class="stack" >
+    <div class="row"><span style="margin-left:auto" class="chip c-warn">待确认</span></div>
+    <h2 style="font-size:20px;line-height:1.5">施工期间交通组织无法判断</h2>
+    <div class="small muted" role="note">状态流转：待确认 › 已确认 › 采纳改稿建议 › 上传新正文 › 复核 › 已解决</div>
+  </div>
+  <div style="padding:16px 24px 20px" class="stack">
+    <div class="grid g2"><div style="padding:14px 16px;border-radius:10px;background:var(--bg)"><div class="small" style="font-weight:700;color:var(--muted)">招标文件要求 · 招标文件 第 6 章 第 36 页</div><div class="quote" style="margin-top:8px;font-size:14px">“施工期间须保证主干道至少单向通行。”</div></div><div style="padding:14px 16px;border-radius:10px;background:var(--danger-bg)"><div class="small" style="font-weight:700;color:var(--danger-ink)">技术标 全文</div><div class="quote" style="margin-top:8px;font-size:14px">未检索到交通组织、围挡导改或单向通行的描述</div></div></div>
+    <div class="banner info" style="align-items:flex-start;display:block"><div class="row" style="font-weight:700"><span class="ai">AI</span>分析</div><p style="margin-top:6px;line-height:1.8">正文没有涉及该要求，不能视为满足。建议补充交通组织与导改方案。</p></div>
+  </div>
+  <div style="border-top:1px solid var(--line);background:var(--sunken);padding:16px 24px" class="row"><button class="btn btn-primary" type="button">确认问题</button><button class="sbtn" type="button">请求补充事实</button><button class="sbtn" type="button">暂缓</button><button class="sbtn danger" type="button">驳回</button>
+    </div>
+</article>
+
+</div><div class="stack" id="d-f6" role="tabpanel" hidden>
+<article class="card" style="overflow:hidden">
+  <div style="padding:20px 24px 0" class="stack" >
+    <div class="row"><span style="margin-left:auto" class="chip c-ok">已解决</span></div>
+    <h2 style="font-size:20px;line-height:1.5">管道接口形式未写明</h2>
+    <div class="small muted" role="note">状态流转：待确认 › 已确认 › 采纳改稿建议 › 上传新正文 › 复核 › 已解决</div>
+  </div>
+  <div style="padding:16px 24px 20px" class="stack">
+    <div class="grid g2"><div style="padding:14px 16px;border-radius:10px;background:var(--bg)"><div class="small" style="font-weight:700;color:var(--muted)">招标文件要求 · 招标文件 第 6 章 第 34 页</div><div class="quote" style="margin-top:8px;font-size:14px">“污水管道接口须采用橡胶圈柔性接口。”</div></div><div style="padding:14px 16px;border-radius:10px;background:var(--ok-bg)"><div class="small" style="font-weight:700;color:var(--ok-ink)">技术标 第 38 页</div><div class="quote" style="margin-top:8px;font-size:14px">“管道接口采用橡胶圈柔性接口。”</div></div></div>
+    <div class="banner info" style="align-items:flex-start;display:block"><div class="row" style="font-weight:700"><span class="ai">AI</span>分析</div><p style="margin-top:6px;line-height:1.8">第 1 轮评审时正文未写接口形式，现已补充，本轮核对为满足。</p></div>
+  </div>
+  <div style="border-top:1px solid var(--line);background:var(--sunken);padding:16px 24px" class="row"><button class="sbtn" type="button">重新打开</button>
+    </div>
+</article>
+
+</div><div class="stack" id="d-f7" role="tabpanel" hidden>
+<article class="card" style="overflow:hidden">
+  <div style="padding:20px 24px 0" class="stack" >
+    <div class="row"><span style="margin-left:auto" class="chip c-warn">待确认</span></div>
+    <h2 style="font-size:20px;line-height:1.5">总工期 175 天与横道图 180 天不一致</h2>
+    <div class="small muted" role="note">状态流转：待确认 › 已确认 › 采纳改稿建议 › 上传新正文 › 复核 › 已解决</div>
+  </div>
+  <div style="padding:16px 24px 20px" class="stack">
+    <div class="grid g2"><div style="padding:14px 16px;border-radius:10px;background:var(--bg)"><div class="small" style="font-weight:700;color:var(--muted)">来源</div><div class="quote" style="margin-top:8px;font-size:14px">由正文自身检测得出，不对应招标规则。</div></div><div style="padding:14px 16px;border-radius:10px;background:var(--danger-bg)"><div class="small" style="font-weight:700;color:var(--danger-ink)">技术标 第 5 页 · 第 52 页</div><div class="quote" style="margin-top:8px;font-size:14px">第 5 页“总工期 175 日历天”；第 52 页横道图“总工期 180 日历天”</div></div></div>
+    <div class="banner info" style="align-items:flex-start;display:block"><div class="row" style="font-weight:700"><span class="ai">AI</span>分析</div><p style="margin-top:6px;line-height:1.8">同一个量在正文两处取值不同。工期承诺不超过 180 天才不触发否决，建议统一为 175 天。</p></div>
+  </div>
+  <div style="border-top:1px solid var(--line);background:var(--sunken);padding:16px 24px" class="row"><button class="btn btn-primary" type="button">确认问题</button><button class="sbtn" type="button">请求补充事实</button><button class="sbtn" type="button">暂缓</button><button class="sbtn danger" type="button">驳回</button>
+    </div>
+</article>
+<div class="card pad stack" style="gap:10px"><div class="row"><h3 style="font-size:16px">改稿建议</h3><span class="ai" title="模型生成">AI</span><span class="small muted">确认问题后可生成；系统不改写 PDF，采纳后在新正文中修改并上传。</span></div><div class="diff quote" style="font-size:14px;line-height:2;padding:14px 16px;border-radius:10px;border:1px solid var(--line)">总进度计划横道图所示总工期为 <del>180 日历天</del><ins>175 日历天</ins>。</div></div>
+</div><div class="stack" id="d-f8" role="tabpanel" hidden>
+<article class="card" style="overflow:hidden">
+  <div style="padding:20px 24px 0" class="stack" >
+    <div class="row"><span style="margin-left:auto" class="chip c-brand">已确认，待改稿</span></div>
+    <h2 style="font-size:20px;line-height:1.5">DN600 管段长度前后取值不同</h2>
+    <div class="small muted" role="note">状态流转：待确认 › 已确认 › 采纳改稿建议 › 上传新正文 › 复核 › 已解决</div>
+  </div>
+  <div style="padding:16px 24px 20px" class="stack">
+    <div class="grid g2"><div style="padding:14px 16px;border-radius:10px;background:var(--bg)"><div class="small" style="font-weight:700;color:var(--muted)">来源</div><div class="quote" style="margin-top:8px;font-size:14px">由正文自身检测得出，不对应招标规则。</div></div><div style="padding:14px 16px;border-radius:10px;background:var(--danger-bg)"><div class="small" style="font-weight:700;color:var(--danger-ink)">技术标 第 29 页 · 第 40 页</div><div class="quote" style="margin-top:8px;font-size:14px">第 29 页“DN600 管段合计 1,240 m”；第 40 页“DN600 管段合计 1,320 m”</div></div></div>
+    <div class="banner info" style="align-items:flex-start;display:block"><div class="row" style="font-weight:700"><span class="ai">AI</span>分析</div><p style="margin-top:6px;line-height:1.8">两处取值相差 80 m，需要对照图纸确认后统一。</p></div>
+  </div>
+  <div style="border-top:1px solid var(--line);background:var(--sunken);padding:16px 24px" class="row"><button class="btn btn-primary" type="button">标记已解决</button><button class="sbtn" type="button">请求补充事实</button><button class="sbtn" type="button">重新打开</button>
+    </div>
+</article>
+
+</div><div class="stack" id="d-f9" role="tabpanel" hidden>
+<article class="card" style="overflow:hidden">
+  <div style="padding:20px 24px 0" class="stack" >
+    <div class="row"><span style="margin-left:auto" class="chip c-ok">已解决</span></div>
+    <h2 style="font-size:20px;line-height:1.5">项目经理姓名前后不一致</h2>
+    <div class="small muted" role="note">状态流转：待确认 › 已确认 › 采纳改稿建议 › 上传新正文 › 复核 › 已解决</div>
+  </div>
+  <div style="padding:16px 24px 20px" class="stack">
+    <div class="grid g2"><div style="padding:14px 16px;border-radius:10px;background:var(--bg)"><div class="small" style="font-weight:700;color:var(--muted)">来源</div><div class="quote" style="margin-top:8px;font-size:14px">由正文自身检测得出，不对应招标规则。</div></div><div style="padding:14px 16px;border-radius:10px;background:var(--ok-bg)"><div class="small" style="font-weight:700;color:var(--ok-ink)">技术标 第 8 页 · 第 87 页</div><div class="quote" style="margin-top:8px;font-size:14px">两处现均为“赵某某”</div></div></div>
+    <div class="banner info" style="align-items:flex-start;display:block"><div class="row" style="font-weight:700"><span class="ai">AI</span>分析</div><p style="margin-top:6px;line-height:1.8">技术标第 4 版已统一，本轮未再检出。</p></div>
+  </div>
+  <div style="border-top:1px solid var(--line);background:var(--sunken);padding:16px 24px" class="row"><button class="sbtn" type="button">重新打开</button>
+    </div>
+</article>
+
+</div><div class="stack" id="d-f10" role="tabpanel" hidden>
+<article class="card" style="overflow:hidden">
+  <div style="padding:20px 24px 0" class="stack" >
+    <div class="row"><span style="margin-left:auto" class="chip c-warn">待确认</span></div>
+    <h2 style="font-size:20px;line-height:1.5">正文出现“泵站”：招标文件及补遗没有该工程对象</h2>
+    <div class="small muted" role="note">状态流转：待确认 › 已确认 › 采纳改稿建议 › 上传新正文 › 复核 › 已解决</div>
+  </div>
+  <div style="padding:16px 24px 20px" class="stack">
+    <div class="grid g2"><div style="padding:14px 16px;border-radius:10px;background:var(--bg)"><div class="small" style="font-weight:700;color:var(--muted)">来源</div><div class="quote" style="margin-top:8px;font-size:14px">由正文自身检测得出，不对应招标规则。</div></div><div style="padding:14px 16px;border-radius:10px;background:var(--danger-bg)"><div class="small" style="font-weight:700;color:var(--danger-ink)">技术标 第 61 页</div><div class="quote" style="margin-top:8px;font-size:14px">“泵站基坑采用钢板桩支护，基坑深度 6.5 m。”</div></div></div>
+    <div class="banner info" style="align-items:flex-start;display:block"><div class="row" style="font-weight:700"><span class="ai">AI</span>分析</div><p style="margin-top:6px;line-height:1.8">招标文件及补遗的工程内容只有管网改造和新建，没有泵站。疑似套用其他项目模板，需删除或确认范围。</p></div>
+  </div>
+  <div style="border-top:1px solid var(--line);background:var(--sunken);padding:16px 24px" class="row"><button class="btn btn-primary" type="button">确认问题</button><button class="sbtn" type="button">请求补充事实</button><button class="sbtn" type="button">暂缓</button><button class="sbtn danger" type="button">驳回</button>
+    </div>
+</article>
+
+</div><div class="stack" id="d-f11" role="tabpanel" hidden>
+<article class="card" style="overflow:hidden">
+  <div style="padding:20px 24px 0" class="stack" >
+    <div class="row"><span style="margin-left:auto" class="chip c-warn">待确认</span></div>
+    <h2 style="font-size:20px;line-height:1.5">正文出现“沉井”施工方案：招标范围没有该工程对象</h2>
+    <div class="small muted" role="note">状态流转：待确认 › 已确认 › 采纳改稿建议 › 上传新正文 › 复核 › 已解决</div>
+  </div>
+  <div style="padding:16px 24px 20px" class="stack">
+    <div class="grid g2"><div style="padding:14px 16px;border-radius:10px;background:var(--bg)"><div class="small" style="font-weight:700;color:var(--muted)">来源</div><div class="quote" style="margin-top:8px;font-size:14px">由正文自身检测得出，不对应招标规则。</div></div><div style="padding:14px 16px;border-radius:10px;background:var(--danger-bg)"><div class="small" style="font-weight:700;color:var(--danger-ink)">技术标 第 67 页</div><div class="quote" style="margin-top:8px;font-size:14px">“沉井下沉采用不排水下沉法，刃脚标高 −7.2 m。”</div></div></div>
+    <div class="banner info" style="align-items:flex-start;display:block"><div class="row" style="font-weight:700"><span class="ai">AI</span>分析</div><p style="margin-top:6px;line-height:1.8">招标范围内没有沉井。该章节与本项目无关，建议删除，避免被评委认定为套用模板。</p></div>
+  </div>
+  <div style="border-top:1px solid var(--line);background:var(--sunken);padding:16px 24px" class="row"><button class="btn btn-primary" type="button">确认问题</button><button class="sbtn" type="button">请求补充事实</button><button class="sbtn" type="button">暂缓</button><button class="sbtn danger" type="button">驳回</button>
+    </div>
+</article>
+
+</div><div class="stack" id="d-f12" role="tabpanel" hidden>
+<article class="card" style="overflow:hidden">
+  <div style="padding:20px 24px 0" class="stack" >
+    <div class="row"><span class="chip c-muted">评分条款 · 8 分</span><span style="margin-left:auto" class="chip c-warn">待确认</span></div>
+    <h2 style="font-size:20px;line-height:1.5">进度计划未体现关键线路</h2>
+    <div class="small muted" role="note">状态流转：待确认 › 已确认 › 采纳改稿建议 › 上传新正文 › 复核 › 已解决</div>
+  </div>
+  <div style="padding:16px 24px 20px" class="stack">
+    <div class="grid g2"><div style="padding:14px 16px;border-radius:10px;background:var(--bg)"><div class="small" style="font-weight:700;color:var(--muted)">招标文件要求 · 招标文件 第 4 章 第 18 页</div><div class="quote" style="margin-top:8px;font-size:14px">“施工进度计划：横道图、网络图齐全且关键线路清晰的，得 6–8 分；基本齐全的，得 3–5 分。”</div></div><div style="padding:14px 16px;border-radius:10px;background:var(--danger-bg)"><div class="small" style="font-weight:700;color:var(--danger-ink)">技术标 第 52 页</div><div class="quote" style="margin-top:8px;font-size:14px">总进度计划横道图，网络图未标注关键线路</div></div></div>
+    <div class="banner info" style="align-items:flex-start;display:block"><div class="row" style="font-weight:700"><span class="ai">AI</span>分析</div><p style="margin-top:6px;line-height:1.8">预测该项约 4.5 分（区间 4.0–5.0），补充关键线路标注和工期保证措施可争取更高档次。</p></div>
+  </div>
+  <div style="border-top:1px solid var(--line);background:var(--sunken);padding:16px 24px" class="row"><button class="btn btn-primary" type="button">确认问题</button><button class="sbtn" type="button">请求补充事实</button><button class="sbtn" type="button">暂缓</button><button class="sbtn danger" type="button">驳回</button>
+    </div>
+</article>
+
+</div><div class="stack" id="d-f13" role="tabpanel" hidden>
+<article class="card" style="overflow:hidden">
+  <div style="padding:20px 24px 0" class="stack" >
+    <div class="row"><span class="chip c-muted">评分条款 · 5 分</span><span class="small muted">依据的规则还没核对，暂按原文判断</span><span style="margin-left:auto" class="chip c-warn">待确认</span></div>
+    <h2 style="font-size:20px;line-height:1.5">环境保护与扬尘治理可补充监测方案</h2>
+    <div class="small muted" role="note">状态流转：待确认 › 已确认 › 采纳改稿建议 › 上传新正文 › 复核 › 已解决</div>
+  </div>
+  <div style="padding:16px 24px 20px" class="stack">
+    <div class="grid g2"><div style="padding:14px 16px;border-radius:10px;background:var(--bg)"><div class="small" style="font-weight:700;color:var(--muted)">招标文件要求 · 招标文件 第 4 章 第 20 页</div><div class="quote" style="margin-top:8px;font-size:14px">“环境保护措施具体、扬尘治理有监测与考核办法的，得 4–5 分。”</div></div><div style="padding:14px 16px;border-radius:10px;background:var(--danger-bg)"><div class="small" style="font-weight:700;color:var(--danger-ink)">技术标 第 71 页</div><div class="quote" style="margin-top:8px;font-size:14px">“现场采取洒水降尘措施。”</div></div></div>
+    <div class="banner info" style="align-items:flex-start;display:block"><div class="row" style="font-weight:700"><span class="ai">AI</span>分析</div><p style="margin-top:6px;line-height:1.8">该规则尚未确认，评审暂按原文判断。预测该项约 1.5 分（区间 0.0–3.0），补充扬尘在线监测和考核办法可提高。</p></div>
+  </div>
+  <div style="border-top:1px solid var(--line);background:var(--sunken);padding:16px 24px" class="row"><button class="btn btn-primary" type="button">确认问题</button><button class="sbtn" type="button">请求补充事实</button><button class="sbtn" type="button">暂缓</button><button class="sbtn danger" type="button">驳回</button>
+    </div>
+</article>
+
+</div><div class="stack" id="d-f14" role="tabpanel" hidden>
+<article class="card" style="overflow:hidden">
+  <div style="padding:20px 24px 0" class="stack" >
+    <div class="row"><span class="chip c-muted">评分条款 · 8 分</span><span style="margin-left:auto" class="chip c-brand">已确认，待改稿</span></div>
+    <h2 style="font-size:20px;line-height:1.5">质量保证措施可补充检测频次</h2>
+    <div class="small muted" role="note">状态流转：待确认 › 已确认 › 采纳改稿建议 › 上传新正文 › 复核 › 已解决</div>
+  </div>
+  <div style="padding:16px 24px 20px" class="stack">
+    <div class="grid g2"><div style="padding:14px 16px;border-radius:10px;background:var(--bg)"><div class="small" style="font-weight:700;color:var(--muted)">招标文件要求 · 招标文件 第 4 章 第 19 页</div><div class="quote" style="margin-top:8px;font-size:14px">“质量保证措施具体可行、检测计划完整的，得 6–8 分。”</div></div><div style="padding:14px 16px;border-radius:10px;background:var(--danger-bg)"><div class="small" style="font-weight:700;color:var(--danger-ink)">技术标 第 46 页</div><div class="quote" style="margin-top:8px;font-size:14px">“按规范要求定期检测。”</div></div></div>
+    <div class="banner info" style="align-items:flex-start;display:block"><div class="row" style="font-weight:700"><span class="ai">AI</span>分析</div><p style="margin-top:6px;line-height:1.8">检测计划只有概括表述，补充检测项目、频次和责任人可提升得分。</p></div>
+  </div>
+  <div style="border-top:1px solid var(--line);background:var(--sunken);padding:16px 24px" class="row"><button class="btn btn-primary" type="button">标记已解决</button><button class="sbtn" type="button">请求补充事实</button><button class="sbtn" type="button">重新打开</button>
+    </div>
+</article>
+
+</div><div class="stack" id="d-f15" role="tabpanel" hidden>
+<article class="card" style="overflow:hidden">
+  <div style="padding:20px 24px 0" class="stack" >
+    <div class="row"><span class="chip c-muted">评分条款 · 8 分</span><span style="margin-left:auto" class="chip c-ok">已解决</span></div>
+    <h2 style="font-size:20px;line-height:1.5">安全文明施工费用口径</h2>
+    <div class="small muted" role="note">状态流转：待确认 › 已确认 › 采纳改稿建议 › 上传新正文 › 复核 › 已解决</div>
+  </div>
+  <div style="padding:16px 24px 20px" class="stack">
+    <div class="grid g2"><div style="padding:14px 16px;border-radius:10px;background:var(--bg)"><div class="small" style="font-weight:700;color:var(--muted)">招标文件要求 · 招标文件 第 4 章 第 19 页</div><div class="quote" style="margin-top:8px;font-size:14px">“安全文明施工措施费用测算合理的，得 6–8 分。”</div></div><div style="padding:14px 16px;border-radius:10px;background:var(--ok-bg)"><div class="small" style="font-weight:700;color:var(--ok-ink)">技术标 第 90 页</div><div class="quote" style="margin-top:8px;font-size:14px">费用口径已与清单计价说明一致</div></div></div>
+    <div class="banner info" style="align-items:flex-start;display:block"><div class="row" style="font-weight:700"><span class="ai">AI</span>分析</div><p style="margin-top:6px;line-height:1.8">技术标第 4 版已统一口径，标记为已解决。</p></div>
+  </div>
+  <div style="border-top:1px solid var(--line);background:var(--sunken);padding:16px 24px" class="row"><button class="sbtn" type="button">重新打开</button>
+    </div>
+</article>
+
+</div></section>
+  <aside class="fixed" aria-label="正文证据" style="flex-basis:270px;min-width:240px"><div class="stack" id="e-f1" hidden>
+<div class="card" style="padding:14px 16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3 style="font-size:14px">正文证据 · 技术标 第 58 页</h3><span class="small muted">PDF 页内高亮</span></div>
+<div class="pdf"><div class="page" role="img" aria-label="技术标第 58 页预览，高亮处为证据原文">
+<div class="ln" style="width:42%;height:8px;background:#d4d4d8"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:94%"></div>
+<div class="hl">“雨季施工注意防汛。”（全文未检索到雨季或冬季施工专项章节）</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:88%"></div>
+<div class="small muted" style="margin-top:auto;text-align:center">第 58 页预览（示意）</div></div></div>
+<a class="sbtn" href="#">在原件中打开 →</a></div><div class="stack" id="e-f2" hidden>
+<div class="card" style="padding:14px 16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3 style="font-size:14px">正文证据 · 技术标 第 5 页</h3><span class="small muted">PDF 页内高亮</span></div>
+<div class="pdf"><div class="page" role="img" aria-label="技术标第 5 页预览，高亮处为证据原文">
+<div class="ln" style="width:42%;height:8px;background:#d4d4d8"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:94%"></div>
+<div class="hl">“本工程总工期 175 日历天。”</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:88%"></div>
+<div class="small muted" style="margin-top:auto;text-align:center">第 5 页预览（示意）</div></div></div>
+<a class="sbtn" href="#">在原件中打开 →</a></div><div class="stack" id="e-f3" hidden>
+<div class="card" style="padding:14px 16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3 style="font-size:14px">正文证据 · 技术标 第 36 页</h3><span class="small muted">PDF 页内高亮</span></div>
+<div class="pdf"><div class="page" role="img" aria-label="技术标第 36 页预览，高亮处为证据原文">
+<div class="ln" style="width:42%;height:8px;background:#d4d4d8"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:94%"></div>
+<div class="hl">“DN600 管道埋深按 1.5 m 控制。”</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:88%"></div>
+<div class="small muted" style="margin-top:auto;text-align:center">第 36 页预览（示意）</div></div></div>
+<a class="sbtn" href="#">在原件中打开 →</a></div><div class="stack" id="e-f4" hidden>
+<div class="card" style="padding:14px 16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3 style="font-size:14px">正文证据 · 技术标 第 8 页</h3><span class="small muted">PDF 页内高亮</span></div>
+<div class="pdf"><div class="page" role="img" aria-label="技术标第 8 页预览，高亮处为证据原文">
+<div class="ln" style="width:42%;height:8px;background:#d4d4d8"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:94%"></div>
+<div class="hl">“项目经理：赵某某，一级建造师。”（未写专业、证书编号和 B 证）</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:88%"></div>
+<div class="small muted" style="margin-top:auto;text-align:center">第 8 页预览（示意）</div></div></div>
+<a class="sbtn" href="#">在原件中打开 →</a></div><div class="stack" id="e-f5" hidden>
+<div class="card" style="padding:14px 16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3 style="font-size:14px">正文证据 · 技术标 全文</h3><span class="small muted">PDF 页内高亮</span></div>
+<div class="pdf"><div class="page" role="img" aria-label="技术标第 36 页预览，高亮处为证据原文">
+<div class="ln" style="width:42%;height:8px;background:#d4d4d8"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:94%"></div>
+<div class="hl">未检索到交通组织、围挡导改或单向通行的描述</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:88%"></div>
+<div class="small muted" style="margin-top:auto;text-align:center">第 36 页预览（示意）</div></div></div>
+<a class="sbtn" href="#">在原件中打开 →</a></div><div class="stack" id="e-f6" hidden>
+<div class="card" style="padding:14px 16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3 style="font-size:14px">正文证据 · 技术标 第 38 页</h3><span class="small muted">PDF 页内高亮</span></div>
+<div class="pdf"><div class="page" role="img" aria-label="技术标第 38 页预览，高亮处为证据原文">
+<div class="ln" style="width:42%;height:8px;background:#d4d4d8"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:94%"></div>
+<div class="hl">“管道接口采用橡胶圈柔性接口。”</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:88%"></div>
+<div class="small muted" style="margin-top:auto;text-align:center">第 38 页预览（示意）</div></div></div>
+<a class="sbtn" href="#">在原件中打开 →</a></div><div class="stack" id="e-f7" hidden>
+<div class="card" style="padding:14px 16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3 style="font-size:14px">正文证据 · 技术标 第 5 页 · 第 52 页</h3><span class="small muted">PDF 页内高亮</span></div>
+<div class="pdf"><div class="page" role="img" aria-label="技术标第 52 页预览，高亮处为证据原文">
+<div class="ln" style="width:42%;height:8px;background:#d4d4d8"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:94%"></div>
+<div class="hl">第 5 页“总工期 175 日历天”；第 52 页横道图“总工期 180 日历天”</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:88%"></div>
+<div class="small muted" style="margin-top:auto;text-align:center">第 52 页预览（示意）</div></div></div>
+<a class="sbtn" href="#">在原件中打开 →</a></div><div class="stack" id="e-f8" hidden>
+<div class="card" style="padding:14px 16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3 style="font-size:14px">正文证据 · 技术标 第 29 页 · 第 40 页</h3><span class="small muted">PDF 页内高亮</span></div>
+<div class="pdf"><div class="page" role="img" aria-label="技术标第 40 页预览，高亮处为证据原文">
+<div class="ln" style="width:42%;height:8px;background:#d4d4d8"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:94%"></div>
+<div class="hl">第 29 页“DN600 管段合计 1,240 m”；第 40 页“DN600 管段合计 1,320 m”</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:88%"></div>
+<div class="small muted" style="margin-top:auto;text-align:center">第 40 页预览（示意）</div></div></div>
+<a class="sbtn" href="#">在原件中打开 →</a></div><div class="stack" id="e-f9" hidden>
+<div class="card" style="padding:14px 16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3 style="font-size:14px">正文证据 · 技术标 第 8 页 · 第 87 页</h3><span class="small muted">PDF 页内高亮</span></div>
+<div class="pdf"><div class="page" role="img" aria-label="技术标第 87 页预览，高亮处为证据原文">
+<div class="ln" style="width:42%;height:8px;background:#d4d4d8"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:94%"></div>
+<div class="hl">两处现均为“赵某某”</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:88%"></div>
+<div class="small muted" style="margin-top:auto;text-align:center">第 87 页预览（示意）</div></div></div>
+<a class="sbtn" href="#">在原件中打开 →</a></div><div class="stack" id="e-f10" hidden>
+<div class="card" style="padding:14px 16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3 style="font-size:14px">正文证据 · 技术标 第 61 页</h3><span class="small muted">PDF 页内高亮</span></div>
+<div class="pdf"><div class="page" role="img" aria-label="技术标第 61 页预览，高亮处为证据原文">
+<div class="ln" style="width:42%;height:8px;background:#d4d4d8"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:94%"></div>
+<div class="hl">“泵站基坑采用钢板桩支护，基坑深度 6.5 m。”</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:88%"></div>
+<div class="small muted" style="margin-top:auto;text-align:center">第 61 页预览（示意）</div></div></div>
+<a class="sbtn" href="#">在原件中打开 →</a></div><div class="stack" id="e-f11" hidden>
+<div class="card" style="padding:14px 16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3 style="font-size:14px">正文证据 · 技术标 第 67 页</h3><span class="small muted">PDF 页内高亮</span></div>
+<div class="pdf"><div class="page" role="img" aria-label="技术标第 67 页预览，高亮处为证据原文">
+<div class="ln" style="width:42%;height:8px;background:#d4d4d8"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:94%"></div>
+<div class="hl">“沉井下沉采用不排水下沉法，刃脚标高 −7.2 m。”</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:88%"></div>
+<div class="small muted" style="margin-top:auto;text-align:center">第 67 页预览（示意）</div></div></div>
+<a class="sbtn" href="#">在原件中打开 →</a></div><div class="stack" id="e-f12" hidden>
+<div class="card" style="padding:14px 16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3 style="font-size:14px">正文证据 · 技术标 第 52 页</h3><span class="small muted">PDF 页内高亮</span></div>
+<div class="pdf"><div class="page" role="img" aria-label="技术标第 52 页预览，高亮处为证据原文">
+<div class="ln" style="width:42%;height:8px;background:#d4d4d8"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:94%"></div>
+<div class="hl">总进度计划横道图，网络图未标注关键线路</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:88%"></div>
+<div class="small muted" style="margin-top:auto;text-align:center">第 52 页预览（示意）</div></div></div>
+<a class="sbtn" href="#">在原件中打开 →</a></div><div class="stack" id="e-f13" hidden>
+<div class="card" style="padding:14px 16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3 style="font-size:14px">正文证据 · 技术标 第 71 页</h3><span class="small muted">PDF 页内高亮</span></div>
+<div class="pdf"><div class="page" role="img" aria-label="技术标第 71 页预览，高亮处为证据原文">
+<div class="ln" style="width:42%;height:8px;background:#d4d4d8"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:94%"></div>
+<div class="hl">“现场采取洒水降尘措施。”</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:88%"></div>
+<div class="small muted" style="margin-top:auto;text-align:center">第 71 页预览（示意）</div></div></div>
+<a class="sbtn" href="#">在原件中打开 →</a></div><div class="stack" id="e-f14" hidden>
+<div class="card" style="padding:14px 16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3 style="font-size:14px">正文证据 · 技术标 第 46 页</h3><span class="small muted">PDF 页内高亮</span></div>
+<div class="pdf"><div class="page" role="img" aria-label="技术标第 46 页预览，高亮处为证据原文">
+<div class="ln" style="width:42%;height:8px;background:#d4d4d8"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:94%"></div>
+<div class="hl">“按规范要求定期检测。”</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:88%"></div>
+<div class="small muted" style="margin-top:auto;text-align:center">第 46 页预览（示意）</div></div></div>
+<a class="sbtn" href="#">在原件中打开 →</a></div><div class="stack" id="e-f15" hidden>
+<div class="card" style="padding:14px 16px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h3 style="font-size:14px">正文证据 · 技术标 第 90 页</h3><span class="small muted">PDF 页内高亮</span></div>
+<div class="pdf"><div class="page" role="img" aria-label="技术标第 90 页预览，高亮处为证据原文">
+<div class="ln" style="width:42%;height:8px;background:#d4d4d8"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:94%"></div>
+<div class="hl">费用口径已与清单计价说明一致</div>
+<div class="ln" style="width:92%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:88%"></div>
+<div class="small muted" style="margin-top:auto;text-align:center">第 90 页预览（示意）</div></div></div>
+<a class="sbtn" href="#">在原件中打开 →</a></div></aside>
+</div>
+
+</main>
+</div>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]')),flt='all',cat='disqualification',cur=null;
+  var cats=tabs.map(function(t){return t.dataset.cat});
+  function sel(f){cur=f;
+    document.querySelectorAll('.li').forEach(function(b){b.setAttribute('aria-current',String(b.dataset.f===f))});
+    document.querySelectorAll('[id^=d-],[id^=e-]').forEach(function(e){e.hidden=e.id.slice(2)!==f});}
+  function render(){
+    tabs.forEach(function(t){var on=t.dataset.cat===cat;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;document.getElementById('p-'+t.dataset.cat).hidden=!on});
+    var list=document.querySelectorAll('#p-'+cat+' .li'),n=0,first=null;
+    list.forEach(function(b){var show=flt==='all'||(flt==='open'&&b.dataset.open==='1')||(flt==='done'&&b.dataset.open==='0');b.hidden=!show;if(show){n++;if(!first)first=b}});
+    document.getElementById('cnt').textContent=n;
+    var keep=cur&&document.querySelector('#p-'+cat+' .li[data-f='+cur+']:not([hidden])');
+    sel(keep?cur:(first?first.dataset.f:null));}
+  tabs.forEach(function(t,i){t.onclick=function(){cat=t.dataset.cat;history.replaceState(null,'','#'+cat);render()};
+    t.onkeydown=function(e){var j=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:-1;if(j<0)return;j=(j+tabs.length)%tabs.length;tabs[j].focus();tabs[j].click();e.preventDefault()}});
+  document.querySelectorAll('.li').forEach(function(b){b.onclick=function(){sel(b.dataset.f)}});
+  var fb=document.querySelectorAll('[data-flt]');
+  fb.forEach(function(b){b.onclick=function(){flt=b.dataset.flt;fb.forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});render()}});
+  document.addEventListener('keydown',function(e){if(/INPUT|SELECT|TEXTAREA/.test(e.target.tagName))return;
+    if(e.key!=='j'&&e.key!=='k'&&e.key!=='J'&&e.key!=='K')return;
+    var l=[].slice.call(document.querySelectorAll('#p-'+cat+' .li:not([hidden])')),i=l.findIndex(function(b){return b.dataset.f===cur});
+    var j=/j/i.test(e.key)?i+1:i-1;if(l[j]){sel(l[j].dataset.f);l[j].focus()}});
+  var h=location.hash.slice(1);if(cats.indexOf(h)>=0)cat=h;render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>提交与结果 · 施组工作台</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<div class="app">
+<aside class="side">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">施</span><span><span class="brand-name" style="display:block">施组工作台</span><span class="brand-sub">技术标评审与报价</span></span></a>
+<button class="search" type="button"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>搜索或跳转</span><kbd>Ctrl K</kbd></button>
+<nav aria-label="全局"><a class="nav" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg><span>项目</span></a><a class="nav" href="metrics.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>度量</span></a></nav>
+<div class="proj"><a class="proj-name" href="report.html">广德市污水管网改造及新建工程</a><div><span class="chip c-warn">! 问题待处理</span></div><div class="proj-meta">截止 10 月 14 日 09:30 · 第 3 轮</div></div>
+<nav aria-label="项目"><div class="grp">项目</div><a class="nav" href="report.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>报告</span></a><a class="nav" href="findings.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.01"/></svg><span>问题</span><span class="badge alert" aria-label="11 条问题未处理">11</span></a><a class="nav" href="rules.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg><span>依据</span><span class="badge" aria-label="2 条规则未确认">2</span></a><a class="nav" href="price.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5c0-1 1-1.7 2.5-1.7s2.5.7 2.5 1.7-1 1.5-2.5 1.8-2.5.8-2.5 1.8 1 1.7 2.5 1.7 2.5-.7 2.5-1.7"/></svg><span>报价</span></a><a class="nav" href="submit.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-3-7z"/></svg><span>提交与结果</span></a><a class="nav" href="materials.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>资料</span></a></nav>
+<nav class="side-sep" aria-label="工具"><div class="grp">工具</div><span class="nav static" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><span>检索</span></span><a class="nav" href="settings.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg><span>设置</span></a></nav>
+<p class="side-note">AI 产生的内容均为建议，须经人工确认</p>
+<div class="user"><span class="avatar" aria-hidden="true">王</span><div><div style="font-weight:500">王工</div></div></div></aside>
+<main class="main" id="main">
+<div class="crumb"><a href="index.html">全部项目</a> / <a href="report.html">广德市污水管网改造及新建工程</a> / 提交与结果</div>
+
+<header class="head">
+  <div><h1>提交与结果</h1><p class="lead">登记实际提交的版本；开标后登记结果和得分，用来校准预测。</p></div>
+</header>
+<div class="tabs" role="tablist" aria-label="提交与结果"><button class="tab" role="tab" id="t-submit" aria-controls="v-submit" aria-selected="true">登记提交</button><button class="tab" role="tab" id="t-result" aria-controls="v-result" aria-selected="false" tabindex="-1">登记开标结果</button></div>
+
+<div id="v-submit" role="tabpanel" aria-labelledby="t-submit" class="split">
+  <section class="card pad grow" aria-labelledby="gate-h">
+    <div class="card-h"><h2 id="gate-h">登记前的检查</h2><span class="chip c-danger">✕ 3 项未满足</span></div>
+    <ul class="gate">
+      <li><span class="mark no" aria-hidden="true">✕</span><div style="flex:1"><div class="stmt">废标／否决／强制类规则已全部确认 <span class="chip c-danger">未满足</span></div><div class="sm muted">这类规则共 13 条，已确认 12 条，还有 1 条未确认：项目经理资质（招标文件 第 3 章 第 14 页）。</div><a class="sm" style="font-weight:600" href="rules.html">确认规则</a></div></li>
+      <li><span class="mark no" aria-hidden="true">✕</span><div style="flex:1"><div class="stmt">没有未处理的关键问题 <span class="chip c-danger">未满足</span></div><div class="sm muted">还有 2 条关键问题没有结论：缺少雨季、冬季施工专项措施；DN600 管道埋深低于补遗要求。</div><a class="sm" style="font-weight:600" href="findings.html">处理问题</a></div></li>
+      <li><span class="mark no" aria-hidden="true">✕</span><div style="flex:1"><div class="stmt">没有未处理的废标／强制响应类问题 <span class="chip c-danger">未满足</span></div><div class="sm muted">废标／否决风险 1 条、强制性要求问题 3 条，共 4 条未处理。</div><a class="sm" style="font-weight:600" href="findings.html#response">处理问题</a></div></li>
+    </ul>
+    <p class="sm muted" style="margin-top:8px">三项全部满足后才能登记提交。评分条款与建议性要求的规则、改进建议类问题不影响提交。</p>
+  </section>
+
+  <section class="card pad fixed stack" style="flex-basis:360px" aria-labelledby="sf">
+    <h2 id="sf" style="font-size:17px">登记提交</h2>
+    <p class="sm muted">左边 3 项处理好后，在这里填提交时间（默认现在）和回执即可登记，提交的正文就是最近一轮评审用的版本。</p>
+  </section>
+</div>
+
+<div id="v-result" role="tabpanel" aria-labelledby="t-result" class="stack" hidden>
+  <div class="banner info"><span>还没有提交记录。登记提交后，才能登记官方公布或自行报送的评标结果；官方结果以原件为准。已登记的官方技术分会与对应预测配对，用于校准（目前已配对 3 / 20 组）。</span></div>
+  <form class="card pad stack" onsubmit="return false" aria-labelledby="rf">
+    <h2 id="rf" style="font-size:17px">登记开标结果</h2>
+    <div class="form2">
+      <div class="field"><label for="r1">对应提交</label><select id="r1" disabled><option>尚无提交记录</option></select></div>
+      <div class="field"><label for="r2">阶段结果</label><select id="r2" disabled><option>技术标入围</option><option>未入围</option><option>被否决</option><option>候选中标人</option><option>中标</option><option>未中标</option><option>项目取消</option><option>流标</option></select></div>
+      <fieldset><legend>来源</legend><div class="radio"><label><input type="radio" name="src" checked disabled>官方公布</label><label><input type="radio" name="src" disabled>自行报送</label></div></fieldset>
+      <div class="field"><label for="r3">得分对象</label><select id="r3" disabled><option>技术分合计</option><option>综合得分合计</option><option>不涉及分数</option></select></div>
+      <div class="field"><label for="r4">得分</label><input id="r4" type="text" inputmode="decimal" disabled></div>
+      <div class="field"><label for="r5">满分</label><input id="r5" type="text" inputmode="decimal" value="60" disabled></div>
+      <div class="field"><label for="r6">汇总方式</label><input id="r6" type="text" placeholder="例如：去掉最高、最低后的平均分" disabled></div>
+      <div class="field"><label for="r7">公布时间</label><input id="r7" type="datetime-local" disabled></div>
+      <div class="field"><label for="r8">来源文件页码</label><input id="r8" type="number" min="1" disabled></div>
+      <div class="field"><label for="r9">来源说明（必填）</label><input id="r9" type="text" placeholder="例如：开标记录表第 2 页" disabled></div>
+    </div>
+    <div class="row"><button class="btn btn-primary" type="submit" disabled aria-describedby="rd">登记结果</button><span class="sm muted" id="rd">需要先登记提交。</span></div>
+  </form>
+</div>
+
+</main>
+</div>
+<script>
+(function(){
+  var tabs=document.querySelectorAll('[role=tab]');
+  function show(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on})}
+  tabs.forEach(function(t){t.onclick=function(){show(t);history.replaceState(null,'','#'+t.id.slice(2))};
+    t.onkeydown=function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){var o=tabs[0]===t?tabs[1]:tabs[0];o.focus();o.click();e.preventDefault()}}});
+  if(location.hash==='#result')show(document.getElementById('t-result'));
+})();
+</script>
+</body>
+</html>

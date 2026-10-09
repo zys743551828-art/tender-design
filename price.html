@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>报价 · 施组工作台</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<div class="app">
+<aside class="side">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">施</span><span><span class="brand-name" style="display:block">施组工作台</span><span class="brand-sub">技术标评审与报价</span></span></a>
+<button class="search" type="button"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>搜索或跳转</span><kbd>Ctrl K</kbd></button>
+<nav aria-label="全局"><a class="nav" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg><span>项目</span></a><a class="nav" href="metrics.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>度量</span></a></nav>
+<div class="proj"><a class="proj-name" href="report.html">广德市污水管网改造及新建工程</a><div><span class="chip c-warn">! 问题待处理</span></div><div class="proj-meta">截止 10 月 14 日 09:30 · 第 3 轮</div></div>
+<nav aria-label="项目"><div class="grp">项目</div><a class="nav" href="report.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>报告</span></a><a class="nav" href="findings.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.01"/></svg><span>问题</span><span class="badge alert" aria-label="11 条问题未处理">11</span></a><a class="nav" href="rules.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg><span>依据</span><span class="badge" aria-label="2 条规则未确认">2</span></a><a class="nav" href="price.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5c0-1 1-1.7 2.5-1.7s2.5.7 2.5 1.7-1 1.5-2.5 1.8-2.5.8-2.5 1.8 1 1.7 2.5 1.7 2.5-.7 2.5-1.7"/></svg><span>报价</span></a><a class="nav" href="submit.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-3-7z"/></svg><span>提交与结果</span></a><a class="nav" href="materials.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>资料</span></a></nav>
+<nav class="side-sep" aria-label="工具"><div class="grp">工具</div><span class="nav static" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><span>检索</span></span><a class="nav" href="settings.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg><span>设置</span></a></nav>
+<p class="side-note">AI 产生的内容均为建议，须经人工确认</p>
+<div class="user"><span class="avatar" aria-hidden="true">王</span><div><div style="font-weight:500">王工</div></div></div></aside>
+<main class="main" id="main">
+<div class="crumb"><a href="index.html">全部项目</a> / <a href="report.html">广德市污水管网改造及新建工程</a> / 报价</div>
+
+<header class="head">
+  <div><h1>报价</h1><p class="lead">试算不同报价的价格分，看 1 个技术分值多少报价。</p></div>
+  <div class="tools"><button class="btn btn-primary" type="button">保存方案</button></div>
+</header>
+
+
+<div class="split">
+<form class="fixed card pad stack" style="flex-basis:400px;gap:18px" onsubmit="return false" aria-label="评标价规则与报价输入">
+  <fieldset class="stack" style="gap:12px"><legend style="font:700 16px var(--sans)">评标价规则</legend>
+    <div class="sm"><p>已按招标文件填好评标价规则，请核对：</p><blockquote class="quote" style="margin:6px 0;padding:8px 12px;border-left:3px solid var(--line);background:var(--sunken)">价格分满分 40 分；评标基准价为有效投标报价去掉最高、最低各 10% 后的算术平均值乘以 0.98；高于基准价每 1% 扣 1 分，低于基准价每 1% 扣 0.5 分。 <a href="#">第 22 页</a></blockquote><a href="#">按招标文件重新填入</a></div>
+    <div class="form2"><div class="field"><label for="full">价格分满分</label><input id="full" type="number" step="0.01" value="40"></div><div class="field"><label for="maxlim">最高限价（万元）</label><input id="maxlim" type="number" step="0.01" value="4860"></div></div>
+    <div class="form2"><div class="field"><label for="above">高于基准价每 1% 扣分</label><input id="above" type="number" step="0.01" value="1"></div><div class="field"><label for="below">低于基准价每 1% 扣分</label><input id="below" type="number" step="0.01" value="0.5"></div></div>
+    <div class="field"><label for="lowpct">异常低价线（低于基准价 %）</label><input id="lowpct" type="number" step="0.1" value="15"></div>
+  </fieldset>
+  <fieldset class="stack" style="gap:12px"><legend style="font:700 16px var(--sans)">基准价取法</legend>
+    <div class="radio" role="radiogroup"><label><input type="radio" name="method" value="fixed">固定值</label><label><input type="radio" name="method" value="average">平均值</label><label><input type="radio" name="method" value="trimmed_average" checked>去极值平均值</label></div>
+    <div class="form2"><div class="field"><label for="coef">系数</label><input id="coef" type="number" step="0.01" value="0.98"></div><div class="field"><label for="trim">去极值比例（%，两端各去）</label><input id="trim" type="number" step="0.5" value="12.5"></div></div>
+    <div class="field"><label for="fixed">固定基准价（万元，仅固定值用）</label><input id="fixed" type="number" step="0.01" value="4600"></div>
+    <label class="row sm" style="gap:8px;min-height:44px"><input id="own" type="checkbox" style="width:18px;height:18px"> 把己方报价计入平均（以第 1 个候选报价代表）</label>
+    <p class="hint small muted">基准价取决于对手报价；对手报价只是估计，真实基准价以开标时为准。</p>
+  </fieldset>
+  <div class="field"><label for="comp">竞争对手报价估计（万元，逐行或批量粘贴）</label><textarea id="comp" style="min-height:190px" spellcheck="false">4620
+4585
+4710
+4540
+4680
+4455
+4755
+4390</textarea><span class="hint small muted" id="ccount">8 个估计</span></div>
+  <fieldset class="stack" style="gap:8px"><legend style="font:700 16px var(--sans)">候选报价（万元）</legend><div class="row" style="gap:8px"><label class="vh" for="c0">候选报价 1</label><input class="cand" id="c0" type="number" step="0.01" value="4480" inputmode="decimal" style="flex:1"><span class="muted sm">万元</span></div><div class="row" style="gap:8px"><label class="vh" for="c1">候选报价 2</label><input class="cand" id="c1" type="number" step="0.01" value="4520" inputmode="decimal" style="flex:1"><span class="muted sm">万元</span></div><div class="row" style="gap:8px"><label class="vh" for="c2">候选报价 3</label><input class="cand" id="c2" type="number" step="0.01" value="4560" inputmode="decimal" style="flex:1"><span class="muted sm">万元</span></div><div class="row" style="gap:8px"><label class="vh" for="c3">候选报价 4</label><input class="cand" id="c3" type="number" step="0.01" value="4620" inputmode="decimal" style="flex:1"><span class="muted sm">万元</span></div><div class="row" style="gap:8px"><label class="vh" for="c4">候选报价 5</label><input class="cand" id="c4" type="number" step="0.01" value="4880" inputmode="decimal" style="flex:1"><span class="muted sm">万元</span></div></fieldset>
+  <div class="field"><label for="note">备注</label><input id="note" type="text" value="对手估计补充至 8 家，系数 0.98"></div>
+</form>
+
+<div class="grow stack">
+  <section class="card pad" aria-labelledby="rs">
+    <div class="card-h"><h2 id="rs">试算结果</h2></div>
+    <div class="grid g3" style="margin-bottom:14px">
+      <div><div class="sm muted">基准价</div><div class="num" style="font:700 24px var(--sans)" id="bm">—</div></div>
+      <div><div class="sm muted">最优候选</div><div class="num" style="font:700 24px var(--sans)" id="bs">—</div></div>
+      <div><div class="sm muted">价格分</div><div class="num" style="font:700 24px var(--sans)" id="bp">—</div></div>
+    </div>
+    <div class="scroll" tabindex="0" role="region" aria-label="候选报价试算表"><table><thead><tr><th class="r">候选报价（万元）</th><th class="r">相对基准价</th><th class="r">价格分</th><th>提示</th></tr></thead><tbody id="rows"></tbody></table></div>
+    <noscript><p class="sm">需要启用脚本才能实时试算。示例结果：基准价 4,506.37 万元，最优候选 4,480.00 万元，价格分 39.71。</p></noscript>
+  </section>
+  <section class="card pad" aria-labelledby="ex">
+    <div class="card-h"><h2 id="ex">技术分与报价的换算</h2></div>
+    <p id="xr" style="font:600 16px/1.7 var(--sans)"></p>
+    <p class="sm muted" id="xr2" style="margin-top:6px"></p>
+  </section>
+  <section class="card pad" aria-labelledby="cv">
+    <div class="card-h"><h2 id="cv">价格分曲线</h2><span class="small muted">纵轴从 30 分起；虚线为最高限价与异常低价线</span></div>
+    <div id="svgwrap"></div>
+    <div class="legend" style="margin-top:6px"><span><svg width="18" height="14" viewBox="0 0 18 14" aria-hidden="true"><circle cx="9" cy="7" r="5" stroke-width="2" style="fill:var(--card);stroke:var(--brand)"/></svg>候选报价</span><span><svg width="18" height="14" viewBox="0 0 18 14" aria-hidden="true"><path d="M9 1l6 6-6 6-6-6z" style="fill:var(--brand-d)"/></svg>最优候选</span><span><svg width="18" height="14" viewBox="0 0 18 14" aria-hidden="true"><path d="M4 2l10 10M14 2L4 12" stroke-width="2.5" style="stroke:var(--danger)"/></svg>被否决或风险</span></div>
+  </section>
+  <section class="card pad" aria-labelledby="rk"><div class="card-h"><h2 id="rk">风险提示</h2></div><ul id="notes" class="stack" style="gap:8px;margin:0;padding-left:20px"></ul></section>
+  <section class="card pad" aria-labelledby="hs">
+    <div class="card-h"><h2 id="hs">历史版本</h2><span class="small muted">每次保存追加一个版本，保留全部记录</span></div>
+    <div class="scroll" tabindex="0" role="region" aria-label="报价历史"><table><thead><tr><th>保存时间</th><th>保存人</th><th>备注</th><th class="r">基准价</th><th class="r">最优候选 · 价格分</th><th></th></tr></thead><tbody>
+      <tr><td class="num">今天 10:05</td><td>王工</td><td>对手估计补充至 8 家，系数 0.98</td><td class="r num">4,506.37</td><td class="r num">4,480.00 · 39.71</td><td><span class="chip c-brand">当前</span></td></tr>
+      <tr><td class="num">10 月 8 日 15:20</td><td>王工</td><td>对手估计 6 家，系数 1.00</td><td class="r num">4,606.25</td><td class="r num">4,600.00 · 39.93</td><td><button class="sbtn sm-btn" type="button">载入</button></td></tr>
+      <tr><td class="num">10 月 7 日 11:40</td><td>王工</td><td>按固定基准价 4,600 试算</td><td class="r num">4,600.00</td><td class="r num">4,550.00 · 39.46</td><td><button class="sbtn sm-btn" type="button">载入</button></td></tr>
+    </tbody></table></div>
+  </section>
+</div>
+</div>
+
+</main>
+</div>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var NS='http://www.w3.org/2000/svg';
+  function num(i){var v=parseFloat($(i).value);return isFinite(v)?v:NaN}
+  function f2(x){return x.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+  function list(s){return s.split(/[\s,，;；]+/).map(parseFloat).filter(function(v){return isFinite(v)&&v>0})}
+  function method(){return document.querySelector('input[name=method]:checked').value}
+  function calc(){
+    var p={full:num('full'),above:num('above'),below:num('below'),max:num('maxlim'),low:num('lowpct'),coef:num('coef'),trim:num('trim'),fixed:num('fixed')};
+    var comp=list($('comp').value),cands=[].slice.call(document.querySelectorAll('.cand')).map(function(e){return parseFloat(e.value)}).filter(function(v){return isFinite(v)&&v>0});
+    $('ccount').textContent=comp.length+' 个估计';
+    var pool=comp.slice();if($('own').checked&&cands.length)pool.push(cands[0]);
+    var b=null,m=method();
+    if(m==='fixed')b=p.fixed;
+    else if(pool.length){pool.sort(function(a,c){return a-c});
+      if(m==='trimmed_average'){var k=Math.floor(pool.length*p.trim/100);if(pool.length-2*k>0)pool=pool.slice(k,pool.length-k)}
+      b=pool.reduce(function(a,c){return a+c},0)/pool.length*p.coef}
+    if(!b||!isFinite(b))return null;
+    function pt(x){var d=(x-b)/b*100,ded=d>0?d*p.above:-d*p.below,fl=[];
+      if(x>p.max)fl.push('over');if(p.low>=0&&x<b*(1-p.low/100))fl.push('low');
+      return {price:x,dev:d,score:Math.max(0,p.full-ded),flags:fl}}
+    var cs=cands.map(pt),best=null;
+    cs.forEach(function(c){if(!c.flags.length&&(!best||c.score>best.score))best=c});
+    return {p:p,b:b,cs:cs,best:best,pt:pt};
+  }
+  function el(n,a,t){var e=document.createElementNS(NS,n);for(var k in a){if((k==='fill'||k==='stroke')&&String(a[k]).indexOf('var(')===0)e.style[k]=a[k];else e.setAttribute(k,a[k])}if(t!=null)e.textContent=t;return e}
+  function chart(r){
+    var W=720,H=330,L=56,R=24,T=40,Bt=48,x0=3700,x1=5000,y0=30,y1=Math.max(40,Math.ceil(r.p.full/2)*2);
+    var X=function(v){return L+(v-x0)/(x1-x0)*(W-L-R)},Y=function(v){return T+(y1-v)/(y1-y0)*(H-T-Bt)};
+    var s=el('svg',{viewBox:'0 0 '+W+' '+H,'class':'chart',role:'img','aria-label':'价格分曲线：基准价 '+f2(r.b)+' 万元处价格分最高；'+(r.best?'最优候选 '+f2(r.best.price)+' 万元，价格分 '+f2(r.best.score):'没有可用候选')});
+    for(var y=y0;y<=y1;y+=2){s.appendChild(el('line',{x1:L,x2:W-R,y1:Y(y),y2:Y(y),stroke:'var(--line)'}));s.appendChild(el('text',{x:L-8,y:Y(y)+4,'text-anchor':'end','font-size':12},y))}
+    for(var x=3800;x<=5000;x+=200){s.appendChild(el('line',{x1:X(x),x2:X(x),y1:H-Bt,y2:H-Bt+6,stroke:'var(--muted)'}));s.appendChild(el('text',{x:X(x),y:H-Bt+22,'text-anchor':'middle','font-size':12},x.toLocaleString('en-US')))}
+    s.appendChild(el('text',{x:(L+W-R)/2,y:H-6,'text-anchor':'middle','font-size':12},'报价（万元）'));
+    s.appendChild(el('text',{x:14,y:T-16,'font-size':12},'价格分'));
+    function vline(v,txt,dash,anchor){if(v<x0||v>x1)return;s.appendChild(el('line',{x1:X(v),x2:X(v),y1:T-6,y2:H-Bt,stroke:'var(--muted)','stroke-width':1.5,'stroke-dasharray':dash}));s.appendChild(el('text',{x:X(v)+(anchor==='end'?-6:6),y:T-10,'font-size':12,'text-anchor':anchor},txt))}
+    vline(r.p.max,'最高限价 '+f2(r.p.max),'6 4','end');
+    vline(r.b*(1-r.p.low/100),'异常低价线 '+f2(r.b*(1-r.p.low/100)),'2 4','start');
+    vline(r.b,'基准价 '+f2(r.b),'0','middle');
+    var d='',n=0;for(var v=x0;v<=x1;v+=10){var q=r.pt(v);d+=(n++?'L':'M')+X(v).toFixed(1)+' '+Y(Math.max(y0,q.score)).toFixed(1)}
+    s.appendChild(el('path',{d:d,fill:'none',stroke:'var(--brand)','stroke-width':3}));
+    r.cs.forEach(function(c){var cx=X(Math.min(x1,Math.max(x0,c.price))),cy=Y(Math.max(y0,c.score));
+      if(c.flags.length){s.appendChild(el('path',{d:'M'+(cx-6)+' '+(cy-6)+'l12 12M'+(cx+6)+' '+(cy-6)+'l-12 12',stroke:'var(--danger)','stroke-width':3}))}
+      else if(c===r.best){s.appendChild(el('path',{d:'M'+cx+' '+(cy-9)+'l9 9-9 9-9-9z',fill:'var(--brand-d)',stroke:'var(--card)','stroke-width':1.5}))}
+      else s.appendChild(el('circle',{cx:cx,cy:cy,r:5.5,fill:'var(--card)',stroke:'var(--brand)','stroke-width':2.5}))});
+    $('svgwrap').replaceChildren(s);
+  }
+  function run(){
+    var r=calc(),rows=$('rows');
+    if(!r){rows.innerHTML='<tr><td colspan="4">请填写对手报价或固定基准价。</td></tr>';return}
+    $('bm').textContent=f2(r.b)+' 万元';
+    $('bs').textContent=r.best?f2(r.best.price)+' 万元':'无';
+    $('bp').textContent=r.best?f2(r.best.score)+' / '+f2(r.p.full):'—';
+    rows.innerHTML='';
+    r.cs.forEach(function(c){var tr=document.createElement('tr');if(c.flags.length)tr.className='attn';
+      var tips=[];if(c===r.best)tips.push('<span class="chip c-brand">◆ 最优候选</span>');
+      if(c.flags.indexOf('over')>=0)tips.push('<span class="chip c-danger">✕ 超过最高限价，将被否决</span>');
+      if(c.flags.indexOf('low')>=0)tips.push('<span class="chip c-warn">! 异常低价风险</span>');
+      var dv=(c.dev>=0?'+':'−')+Math.abs(c.dev).toFixed(2)+'%';
+      tr.innerHTML='<td class="r num">'+f2(c.price)+'</td><td class="r num">'+dv+'</td><td class="r num"><b>'+f2(c.score)+'</b></td><td>'+(tips.join(' ')||'<span class="muted">—</span>')+'</td>';
+      rows.appendChild(tr)});
+    var per=r.p.above>0?1/r.p.above:null;
+    $('xr').textContent='高于基准价 1% 失去 '+f2(r.p.above)+' 个价格分，即 1 个分约相当于 '+(per?f2(per):'—')+'% 的报价（按基准价约 '+(per?f2(r.b/100*per):'—')+' 万元）。';
+    $('xr2').textContent='例如预测技术分估计与区间下限相差 7.0 分，约相当于 '+(per?f2(7*per):'—')+'% 的报价。技术分预测未校准，换算仅作参考。';
+    var n=[];
+    r.cs.forEach(function(c){if(c.flags.indexOf('over')>=0)n.push('<b>'+f2(c.price)+' 万元超过最高限价 '+f2(r.p.max)+' 万元，将被否决。</b>');if(c.flags.indexOf('low')>=0)n.push(f2(c.price)+' 万元低于异常低价线，存在异常低价风险。')});
+    if(!r.cs.some(function(c){return c.flags.indexOf('low')>=0}))n.push('异常低价线为 '+f2(r.b*(1-r.p.low/100))+' 万元（低于基准价 '+r.p.low+'%），当前候选均未触及。');
+    n.push(method()==='fixed'?'基准价为固定值，以招标文件规定为准。':'平均值法的基准价取决于对手报价；竞争对手报价只是估计，开标时的真实基准价可能不同。');
+    $('notes').innerHTML=n.map(function(t){return '<li>'+t+'</li>'}).join('');
+    chart(r);
+  }
+  document.querySelectorAll('input,textarea').forEach(function(e){e.addEventListener('input',run)});
+  run();
+})();
+
+</script>
+</body>
+</html>

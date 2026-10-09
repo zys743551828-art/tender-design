@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>度量 · 施组工作台</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<div class="app">
+<aside class="side">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">施</span><span><span class="brand-name" style="display:block">施组工作台</span><span class="brand-sub">技术标评审与报价</span></span></a>
+<button class="search" type="button"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>搜索或跳转</span><kbd>Ctrl K</kbd></button>
+<nav aria-label="全局"><a class="nav" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg><span>项目</span></a><a class="nav" href="metrics.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>度量</span></a></nav>
+<p class="side-note">AI 产生的内容均为建议，须经人工确认</p>
+<div class="user"><span class="avatar" aria-hidden="true">王</span><div><div style="font-weight:500">王工</div></div></div></aside>
+<main class="main" id="main">
+<div class="crumb"><a href="index.html">全部项目</a> / 度量</div>
+
+<header class="head">
+  <div><h1>度量</h1><p class="lead">度量只看结果：入围、中标，废标／否决风险有没有在提交前处理掉，预测准不准，以及每一轮整改带来多少得分变化。</p></div>
+  <div class="tools"><span class="chip c-muted">范围：全部项目</span></div>
+</header>
+
+<section class="grid g4" aria-label="结果">
+  <div class="card kpi"><span class="lab">入围率</span><span class="val num">57.1%</span><span class="sub">入围 4 ÷ 已出结果 7</span></div>
+  <div class="card kpi"><span class="lab">中标率</span><span class="val num">20.0%</span><span class="sub">中标 1 ÷ 最终结果 5（中标、未中标、未入围、被否决）</span></div>
+  <div class="card kpi"><span class="lab">提交数</span><span class="val num">8</span><span class="sub">已出结果 7 · 等待结果 1</span></div>
+  <div class="card kpi bad"><span class="lab">被招标方否决</span><span class="val num">1 <small>次</small></span><span class="sub">提交时仍有未处理的废标／强制类问题：1 条</span></div>
+</section>
+<div class="banner warn"><span>已出结果的样本只有 7 个，比率波动大，只作为过程参考。</span></div>
+
+<div class="split">
+<section class="card pad grow" aria-labelledby="oc">
+  <div class="card-h"><h2 id="oc">结果漏斗</h2></div>
+  <div class="stack" style="gap:12px">
+    <div class="bar-row"><span>提交</span><div class="bar-track"><i style="width:100%"></i></div><b class="num">8</b></div>
+    <div class="bar-row"><span>已出结果</span><div class="bar-track"><i style="width:87.5%"></i></div><b class="num">7</b></div>
+    <div class="bar-row"><span>入围</span><div class="bar-track"><i style="width:50%"></i></div><b class="num">4</b></div>
+    <div class="bar-row"><span>中标</span><div class="bar-track"><i style="width:12.5%"></i></div><b class="num">1</b></div>
+  </div>
+  <div class="scroll" style="margin-top:14px" tabindex="0" role="region" aria-label="结果明细"><table><thead><tr><th>结果</th><th class="r">数量</th><th>说明</th></tr></thead><tbody>
+    <tr><td>入围</td><td class="r num">4</td><td>中标 1 · 未中标 1 · 尚待定标 2</td></tr>
+    <tr><td>未入围</td><td class="r num">2</td><td>技术标未进入下一阶段</td></tr>
+    <tr><td>被否决</td><td class="r num">1</td><td>招标方判定投标文件作废</td></tr>
+  </tbody></table></div>
+</section>
+
+<section class="card pad fixed" style="flex-basis:420px" aria-labelledby="qc">
+  <div class="card-h"><h2 id="qc">废标／否决风险闭环</h2></div>
+  <p class="sm muted" style="margin-bottom:12px">评审发现的废标／否决风险与强制性要求问题，提交前处理了多少。</p>
+  <div class="row" style="gap:0;margin-bottom:6px" role="img" aria-label="发现 17 条，已解决或驳回 12 条，仍未处理 5 条"><div style="flex:12;background:var(--brand);color:var(--on-brand);padding:6px 10px;border-radius:8px 0 0 8px;font-weight:700" class="num">12 已解决或驳回</div><div style="flex:5;background:var(--danger-bg);color:var(--danger-ink);padding:6px 10px;border-radius:0 6px 6px 0;font-weight:500;box-shadow:inset 0 0 0 1px var(--danger-line)" class="num">5 未处理</div></div>
+  <dl style="display:grid;grid-template-columns:1fr auto;gap:8px 12px;margin:14px 0 0;font-size:14px">
+    <dt>评审发现</dt><dd class="num" style="margin:0;font-weight:700">17</dd>
+    <dt>提交前已解决或驳回</dt><dd class="num" style="margin:0;font-weight:700">12</dd>
+    <dt>提交时仍未处理</dt><dd class="num" style="margin:0;font-weight:700">1</dd>
+    <dt>招标方实际否决</dt><dd class="num" style="margin:0;font-weight:700">1</dd>
+  </dl>
+  <p class="small muted" style="margin-top:10px">未处理的 5 条中，4 条在进行中的“广德市污水管网改造及新建工程”。</p>
+</section>
+</div>
+
+<section class="card pad" id="calibration" aria-labelledby="cal">
+  <div class="card-h"><h2 id="cal">预测校准</h2><span class="chip c-warn">样本不足</span></div>
+  <div class="split"><div class="grow">
+    <p class="sm">校准把已登记的官方技术分与对应预测配对（按满分折算为百分制）。需要 20 组配对才给出误差；样本不足时不显示误差，避免被少数样本误导。</p>
+    <div class="row" style="margin:12px 0 6px"><b class="num" style="font:700 24px var(--sans)">3 / 20</b><span class="muted sm">组配对</span></div>
+    <div class="meter" role="img" aria-label="已配对 3 组，需要 20 组"><i style="width:15%"></i></div>
+  </div>
+  <dl class="fixed" style="display:grid;grid-template-columns:auto 1fr;gap:8px 16px;margin:0;font-size:14px">
+    <dt>平均绝对误差</dt><dd style="margin:0" class="muted">— 样本不足，不给出</dd>
+    <dt>平均偏差</dt><dd style="margin:0" class="muted">— 样本不足，不给出</dd>
+    <dt>预测用途</dt><dd style="margin:0">研究用途，未校准</dd></dl></div>
+</section>
+
+<section class="card pad" aria-labelledby="tr">
+  <div class="card-h"><h2 id="tr">整改动作与得分变化</h2></div>
+  <p class="sm muted" style="margin-bottom:10px">每个项目逐轮的预测得分估计。随着未处理问题减少、已解决问题增加，估计是否上升，一目了然。菱形为已登记的官方技术分。</p>
+  <svg class="chart" viewBox="0 0 760 360" role="img" aria-labelledby="tt td"><title id="tt">逐轮预测得分估计趋势</title><desc id="td">三个项目的逐轮预测得分估计：广德项目 36.5、39.5、42.5；城北项目 41.0、47.0；经开区南片项目 38.5、43.0、45.5，官方技术分 46.0。</desc><line x1="56" x2="570" y1="308.0" y2="308.0" style="stroke:var(--line)"/><text x="48" y="312.0" text-anchor="end" font-size="12">30</text><line x1="56" x2="570" y1="237.0" y2="237.0" style="stroke:var(--line)"/><text x="48" y="241.0" text-anchor="end" font-size="12">35</text><line x1="56" x2="570" y1="166.0" y2="166.0" style="stroke:var(--line)"/><text x="48" y="170.0" text-anchor="end" font-size="12">40</text><line x1="56" x2="570" y1="95.0" y2="95.0" style="stroke:var(--line)"/><text x="48" y="99.0" text-anchor="end" font-size="12">45</text><line x1="56" x2="570" y1="24.0" y2="24.0" style="stroke:var(--line)"/><text x="48" y="28.0" text-anchor="end" font-size="12">50</text><text x="115.3" y="330" text-anchor="middle" font-size="12">第 1 轮</text><line x1="115.3" x2="115.3" y1="308" y2="314" style="stroke:var(--muted)"/><text x="313.0" y="330" text-anchor="middle" font-size="12">第 2 轮</text><line x1="313.0" x2="313.0" y1="308" y2="314" style="stroke:var(--muted)"/><text x="510.7" y="330" text-anchor="middle" font-size="12">第 3 轮</text><line x1="510.7" x2="510.7" y1="308" y2="314" style="stroke:var(--muted)"/><line x1="56" x2="570" y1="308" y2="308" style="stroke:var(--muted)"/><text x="56" y="16" font-size="12">预测得分估计（满分 60，纵轴从 30 起）</text><polyline points="115.3,215.7 313.0,173.1 510.7,130.5" fill="none" stroke-width="3" stroke-dasharray="" style="stroke:var(--brand)"/><circle cx="115.3" cy="215.7" r="5.5" stroke-width="2.5" style="fill:var(--card);stroke:var(--brand)"/><circle cx="313.0" cy="173.1" r="5.5" stroke-width="2.5" style="fill:var(--card);stroke:var(--brand)"/><circle cx="510.7" cy="130.5" r="5.5" stroke-width="2.5" style="fill:var(--card);stroke:var(--brand)"/><text x="524.7" y="146.5" font-size="12" font-weight="700" style="fill:var(--brand);fill:var(--brand)">广德市污水管网改…</text><text x="524.7" y="161.5" font-size="12">估计 42.5</text><polyline points="115.3,151.8 313.0,66.6" fill="none" stroke-width="3" stroke-dasharray="7 4" style="stroke:var(--info)"/><rect x="110.3" y="146.8" width="10" height="10" stroke-width="2.5" style="fill:var(--card);stroke:var(--info)"/><rect x="308.0" y="61.6" width="10" height="10" stroke-width="2.5" style="fill:var(--card);stroke:var(--info)"/><text x="327.0" y="58.6" font-size="12" font-weight="700" style="fill:var(--info);fill:var(--info)">城北片区雨污分流…</text><text x="327.0" y="73.6" font-size="12">估计 47.0</text><polyline points="115.3,187.3 313.0,123.4 510.7,87.9" fill="none" stroke-width="3" stroke-dasharray="2 3" style="stroke:var(--warn)"/><path d="M115.3 180.3l7 12h-14z" stroke-width="2.5" style="fill:var(--card);stroke:var(--warn)"/><path d="M313.0 116.4l7 12h-14z" stroke-width="2.5" style="fill:var(--card);stroke:var(--warn)"/><path d="M510.7 80.9l7 12h-14z" stroke-width="2.5" style="fill:var(--card);stroke:var(--warn)"/><text x="546.7" y="73.9" font-size="12" font-weight="700" style="fill:var(--warn);fill:var(--warn)">经开区南片排水管…</text><text x="546.7" y="88.9" font-size="12">估计 45.5 · 官方 46.0</text><path d="M528.7 72.8l8 8-8 8-8-8z" stroke-width="1.5" style="fill:var(--warn);stroke:var(--card)"/></svg>
+  <div class="legend"><span><span class="sw" style="border-color:var(--brand)"></span>圆点：广德市污水管网…</span><span><span class="sw" style="border-color:var(--info);border-top-style:dashed"></span>方块：城北片区雨污…</span><span><span class="sw" style="border-color:var(--warn);border-top-style:dotted"></span>三角：经开区南片…</span></div>
+  <div class="scroll" style="margin-top:14px" tabindex="0" role="region" aria-label="逐轮数据表"><table><thead><tr><th>项目</th><th>轮次</th><th class="r">预测估计</th><th class="r">未处理问题</th><th class="r">已解决问题</th><th class="r">未处理废标／强制类</th><th class="r">官方技术分</th></tr></thead><tbody><tr><td>广德市污水管网改造及新建工程</td><td>第 1 轮</td><td class="r num">36.5</td><td class="r num">14</td><td class="r num">0</td><td class="r num">6</td><td class="r num">—</td></tr><tr><td></td><td>第 2 轮</td><td class="r num">39.5</td><td class="r num">12</td><td class="r num">3</td><td class="r num">5</td><td class="r num">—</td></tr><tr><td></td><td>第 3 轮</td><td class="r num">42.5</td><td class="r num">11</td><td class="r num">4</td><td class="r num">4</td><td class="r num">—</td></tr><tr><td>城北片区雨污分流工程</td><td>第 1 轮</td><td class="r num">41.0</td><td class="r num">8</td><td class="r num">0</td><td class="r num">3</td><td class="r num">—</td></tr><tr><td></td><td>第 2 轮</td><td class="r num">47.0</td><td class="r num">1</td><td class="r num">8</td><td class="r num">0</td><td class="r num">—</td></tr><tr><td>经开区南片排水管网工程</td><td>第 1 轮</td><td class="r num">38.5</td><td class="r num">9</td><td class="r num">0</td><td class="r num">3</td><td class="r num">—</td></tr><tr><td></td><td>第 2 轮</td><td class="r num">43.0</td><td class="r num">3</td><td class="r num">7</td><td class="r num">1</td><td class="r num">—</td></tr><tr><td></td><td>第 3 轮</td><td class="r num">45.5</td><td class="r num">1</td><td class="r num">10</td><td class="r num">0</td><td class="r num">46.0</td></tr></tbody></table></div>
+  <p class="small muted" style="margin-top:8px">预测未校准，趋势只反映模型对正文的评估变化，不等同于评标得分。本稿使用虚构数据。</p>
+</section>
+
+</main>
+</div>
+
+</body>
+</html>

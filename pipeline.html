@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>流水线状态 · 施组工作台</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<div class="app">
+<aside class="side">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">施</span><span><span class="brand-name" style="display:block">施组工作台</span><span class="brand-sub">技术标评审与报价</span></span></a>
+<button class="search" type="button"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>搜索或跳转</span><kbd>Ctrl K</kbd></button>
+<nav aria-label="全局"><a class="nav" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg><span>项目</span></a><a class="nav" href="metrics.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>度量</span></a></nav>
+<div class="proj"><a class="proj-name" href="report.html">滨河新区排水管网工程</a><div><span class="chip c-danger">✕ 评审中断</span></div><div class="proj-meta">截止 10 月 20 日</div></div>
+<nav aria-label="项目"><div class="grp">项目</div><a class="nav" href="report.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>报告</span></a><a class="nav" href="findings.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.01"/></svg><span>问题</span></a><a class="nav" href="rules.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg><span>依据</span></a><a class="nav" href="price.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5c0-1 1-1.7 2.5-1.7s2.5.7 2.5 1.7-1 1.5-2.5 1.8-2.5.8-2.5 1.8 1 1.7 2.5 1.7 2.5-.7 2.5-1.7"/></svg><span>报价</span></a><a class="nav" href="submit.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-3-7z"/></svg><span>提交与结果</span></a><a class="nav" href="materials.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>资料</span></a></nav>
+<nav class="side-sep" aria-label="工具"><div class="grp">工具</div><span class="nav static" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><span>检索</span></span><a class="nav" href="settings.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg><span>设置</span></a></nav>
+<p class="side-note">AI 产生的内容均为建议，须经人工确认</p>
+<div class="user"><span class="avatar" aria-hidden="true">王</span><div><div style="font-weight:500">王工</div></div></div></aside>
+<main class="main" id="main">
+<div class="crumb"><a href="index.html">全部项目</a> / <a href="report.html">滨河新区排水管网工程</a> / 流水线状态</div>
+
+<header class="head">
+  <div><h1>流水线状态</h1><p class="lead">报告页顶部的流水线横幅在各种情况下的样子：评审中断、评审进行中、资料更新、等待手动开始、资料待补充，以及评审尚未完成时的报告页。</p></div>
+</header>
+
+<section class="stack" aria-labelledby="s1"><h2 id="s1" style="font-size:18px">评审中断</h2>
+<div class="banner danger" role="alert">
+  <ol class="steps" aria-label="流水线"><li class="step s-done"><b>资料</b><span class="bar"><i></i></span><span class="st">✓ 完成 · 3 份</span></li><li class="step s-done"><b>规则</b><span class="bar"><i></i></span><span class="st">✓ 完成 · 22 条</span></li><li class="step s-failed"><b>核对</b><span class="bar"><i></i></span><span class="st">✕ 失败 · 中断</span></li><li class="step s-waiting"><b>预测</b><span class="bar"><i></i></span><span class="st">○ 等待</span></li></ol>
+  <span class="sm" style="flex-basis:100%"><b>核对步骤中断：</b>模型服务暂时不可用，已核对 14 / 22 条，本轮没有生成预测与报告。</span>
+  <button class="btn btn-primary push" type="button">重新评审</button>
+</div>
+<p class="sm muted">项目状态为“评审中断”，可重试。重新评审只重试失败的环节，已完成的环节不重做；项目总览与报告页都会显示这一状态。</p></section>
+
+<section class="stack" aria-labelledby="s2"><h2 id="s2" style="font-size:18px">评审进行中</h2>
+<div class="banner info" role="status">
+  <ol class="steps" aria-label="流水线"><li class="step s-done"><b>资料</b><span class="bar"><i></i></span><span class="st">✓ 完成 · 3 份</span></li><li class="step s-done"><b>规则</b><span class="bar"><i></i></span><span class="st">✓ 完成 · 22 条</span></li><li class="step s-running"><b>核对</b><span class="bar"><i></i></span><span class="st">● 进行中 · 14 / 22</span></li><li class="step s-waiting"><b>预测</b><span class="bar"><i></i></span><span class="st">○ 等待</span></li></ol>
+  <span class="sm" style="flex-basis:100%">正在逐条核对规则。可以先离开此页，完成后报告页会自动显示。</span>
+</div></section>
+
+<section class="stack" aria-labelledby="s3"><h2 id="s3" style="font-size:18px">资料、规则或事实有更新</h2>
+<div class="banner warn">
+  <span><b>资料／规则／事实有更新，建议重新评审。</b>当前报告基于更早的输入。</span>
+  <span class="row"><span class="chip c-warn">施组正文已更新</span><span class="chip c-warn">规则已更正</span></span>
+  <button class="btn btn-outline push" type="button">重新评审</button>
+</div>
+<p class="sm muted">上传新版招标文件、补遗或正文会自动开新一轮评审；规则或事实的更正不会自动开新一轮，由人决定何时重新评审。</p></section>
+
+<section class="stack" aria-labelledby="s3b"><h2 id="s3b" style="font-size:18px">等待开始评审（项目设置为手动开始）</h2>
+<div class="banner warn">
+  <ol class="steps" aria-label="流水线"><li class="step s-done"><b>资料</b><span class="bar"><i></i></span><span class="st">✓ 完成 · 3 份</span></li><li class="step s-waiting"><b>规则</b><span class="bar"><i></i></span><span class="st">○ 等待</span></li><li class="step s-waiting"><b>核对</b><span class="bar"><i></i></span><span class="st">○ 等待</span></li><li class="step s-waiting"><b>预测</b><span class="bar"><i></i></span><span class="st">○ 等待</span></li></ol>
+  <span class="sm" style="flex-basis:100%"><b>资料已就绪，等待开始评审。</b>本项目设置为手动开始评审（可在<a href="settings.html">项目设置</a>里改为自动）。资料已解析，不调用模型；开始后系统依次提取规则、核对并预测得分。</span>
+  <button class="btn btn-primary push" type="button">开始评审</button>
+</div>
+<p class="sm muted">适合资料要分几次上传的项目：传齐之后再开始，避免用不完整的资料跑一轮。已有报告的项目再上传新资料时，旧报告仍可查看，横幅提示“资料有更新，等待开始新一轮评审”。</p></section>
+
+<section class="stack" aria-labelledby="s4"><h2 id="s4" style="font-size:18px">资料待补充</h2>
+<div class="card pad stack" style="gap:12px">
+  <ol class="steps" aria-label="流水线"><li class="step s-waiting"><b>资料</b><span class="bar"><i></i></span><span class="st">○ 等待</span></li><li class="step s-waiting"><b>规则</b><span class="bar"><i></i></span><span class="st">○ 等待</span></li><li class="step s-waiting"><b>核对</b><span class="bar"><i></i></span><span class="st">○ 等待</span></li><li class="step s-waiting"><b>预测</b><span class="bar"><i></i></span><span class="st">○ 等待</span></li></ol>
+  <p class="sm">评审需要至少一份招标文件和一份施组正文。当前缺少：</p>
+  <ul class="stack" style="gap:6px;margin:0;padding-left:20px"><li>招标文件（含补遗）</li><li>施组正文</li></ul>
+  <div><a class="btn btn-primary" href="materials.html">上传资料</a></div>
+</div></section>
+
+<section class="stack" aria-labelledby="s5"><h2 id="s5" style="font-size:18px">评审尚未完成时的报告页</h2>
+<div class="card pad stack" style="align-items:flex-start;gap:12px">
+  <span class="chip c-muted">报告尚未生成</span>
+  <h3 style="font-size:17px">还没有完成的评审</h3>
+  <p class="sm muted" style="max-width:60ch">报告在第一轮评审完成后生成。资料齐全后评审自动开始，完成前这里显示流水线进度；资料不全时引导你上传。</p>
+  <a class="btn btn-outline" href="materials.html">去上传资料</a>
+</div></section>
+
+</main>
+</div>
+
+</body>
+</html>

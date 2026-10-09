@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>资料 · 施组工作台</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<div class="app">
+<aside class="side">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">施</span><span><span class="brand-name" style="display:block">施组工作台</span><span class="brand-sub">技术标评审与报价</span></span></a>
+<button class="search" type="button"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>搜索或跳转</span><kbd>Ctrl K</kbd></button>
+<nav aria-label="全局"><a class="nav" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg><span>项目</span></a><a class="nav" href="metrics.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>度量</span></a></nav>
+<div class="proj"><a class="proj-name" href="report.html">某市二期道路排水改造施工</a><div><span class="chip c-info">● 评审中</span></div><div class="proj-meta">截止 10 月 28 日 · 第 1 轮进行中</div></div>
+<nav aria-label="项目"><div class="grp">项目</div><a class="nav" href="report.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>报告</span></a><a class="nav" href="findings.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.01"/></svg><span>问题</span></a><a class="nav" href="rules.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg><span>依据</span></a><a class="nav" href="price.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5c0-1 1-1.7 2.5-1.7s2.5.7 2.5 1.7-1 1.5-2.5 1.8-2.5.8-2.5 1.8 1 1.7 2.5 1.7 2.5-.7 2.5-1.7"/></svg><span>报价</span></a><a class="nav" href="submit.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-3-7z"/></svg><span>提交与结果</span></a><a class="nav" href="materials.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>资料</span></a></nav>
+<nav class="side-sep" aria-label="工具"><div class="grp">工具</div><span class="nav static" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><span>检索</span></span><a class="nav" href="settings.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg><span>设置</span></a></nav>
+<p class="side-note">AI 产生的内容均为建议，须经人工确认</p>
+<div class="user"><span class="avatar" aria-hidden="true">王</span><div><div style="font-weight:500">王工</div></div></div></aside>
+<main class="main" id="main">
+<div class="crumb"><a href="index.html">全部项目</a> / <a href="report.html">某市二期道路排水改造施工</a> / 资料</div>
+
+<header class="head">
+  <div><h1>资料</h1><p class="lead">招标文件和施组正文齐了会自动评审。</p></div>
+</header>
+
+<section class="banner info" aria-label="评审流水线" role="status">
+  <ol class="steps" aria-label="流水线"><li class="step s-running"><b>资料</b><span class="bar"><i></i></span><span class="st">● 进行中 · 施组正文 64%</span></li><li class="step s-waiting"><b>规则</b><span class="bar"><i></i></span><span class="st">○ 等待</span></li><li class="step s-waiting"><b>核对</b><span class="bar"><i></i></span><span class="st">○ 等待</span></li><li class="step s-waiting"><b>预测</b><span class="bar"><i></i></span><span class="st">○ 等待</span></li></ol>
+  <span class="sm">资料解析完成后自动继续。有新版资料上传时，系统会基于最新资料开始新一轮评审。</span>
+</section>
+
+<section class="card pad stack" aria-labelledby="up">
+  <h2 id="up" class="vh">上传资料</h2>
+  <label for="file" class="stack" style="align-items:center;justify-content:center;gap:6px;padding:32px 16px;border:2px dashed var(--line-strong);border-radius:14px;background:var(--sunken);cursor:pointer;text-align:center">
+    <span style="font:700 16px var(--sans)">把招标文件、补遗、施组正文一起拖到这里，或点击选择</span><span class="sm muted">支持 PDF · 单个文件不超过 100 MB；网络中断后可以接着传</span>
+    <input id="file" type="file" accept="application/pdf" multiple class="vh">
+  </label>
+  <div class="stack" style="gap:8px">
+    <p class="sm muted">已按文件名判断用途，不对的可以改：</p>
+    <ul class="staged" aria-label="待上传">
+      <li><b>施工组织设计-第5版.pdf</b><span class="small muted">18.2 MB</span><select aria-label="用途"><option selected>施组正文</option><option>招标文件</option><option>补遗／答疑</option><option>图纸</option></select><select aria-label="记为"><option>新文件</option><option selected>「施工组织设计.pdf」的第 5 版</option></select><a class="sm" href="#">移除</a></li>
+      <li><b>补遗书（二）.pdf</b><span class="small muted">1.1 MB</span><select aria-label="用途"><option>施组正文</option><option>招标文件</option><option selected>补遗／答疑</option><option>图纸</option></select><select aria-label="记为"><option selected>新文件</option></select><a class="sm" href="#">移除</a></li>
+    </ul>
+    <div class="row"><button class="btn btn-primary" type="button">上传 2 个文件</button><button class="sbtn" type="button">全部移除</button></div>
+  </div>
+</section>
+
+<section class="card" aria-labelledby="fl">
+  <div class="pad" style="padding-bottom:12px"><h2 id="fl" style="font-size:17px">已上传的资料</h2></div>
+  <div class="scroll" tabindex="0" role="region" aria-label="资料列表"><table><thead><tr><th>文件</th><th>用途</th><th>版本</th><th>解析状态</th><th>上传</th><th>历史</th></tr></thead><tbody><tr><td class="stmt">招标文件.pdf</td><td>招标文件</td><td>第 1 版</td><td><span class="chip c-ok">✓ 已解析</span></td><td class="sm">今天 11:02 · 王总</td><td>历史版本</td></tr><tr><td class="stmt">补遗1.pdf</td><td>补遗</td><td>第 1 版</td><td><span class="chip c-ok">✓ 已解析</span></td><td class="sm">今天 11:02 · 王总</td><td>历史版本</td></tr><tr><td class="stmt">技术标.pdf <span class="chip c-info">新</span></td><td>施组正文</td><td>第 1 版</td><td><div style="min-width:130px"><span class="chip c-info">● 解析中 64%</span><div class="meter" style="margin-top:6px" role="img" aria-label="解析进度 64%"><i style="width:64%"></i></div></div></td><td class="sm">今天 11:20 · 王总</td><td>—</td></tr><tr><td class="stmt">附图.dwg</td><td>图纸</td><td>第 1 版</td><td><span class="chip c-danger">✕ 解析失败</span></td><td class="sm">今天 11:20 · 王总</td><td><a href="#">重新上传</a></td></tr></tbody></table></div>
+  <div class="banner danger" style="margin:0 20px 20px"><span><b>附图.dwg：</b>暂不支持该格式。请转换为 PDF 后重新上传，该文件不会进入本轮评审的输入。</span></div>
+</section>
+
+</main>
+</div>
+
+</body>
+</html>

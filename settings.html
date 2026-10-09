@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>项目设置 · 施组工作台</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Sans+SC:wght@400;500;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<div class="app">
+<aside class="side">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">施</span><span><span class="brand-name" style="display:block">施组工作台</span><span class="brand-sub">技术标评审与报价</span></span></a>
+<button class="search" type="button"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>搜索或跳转</span><kbd>Ctrl K</kbd></button>
+<nav aria-label="全局"><a class="nav" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg><span>项目</span></a><a class="nav" href="metrics.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>度量</span></a></nav>
+<div class="proj"><a class="proj-name" href="report.html">广德市污水管网改造及新建工程</a><div><span class="chip c-warn">! 问题待处理</span></div><div class="proj-meta">截止 10 月 14 日 09:30 · 第 3 轮</div></div>
+<nav aria-label="项目"><div class="grp">项目</div><a class="nav" href="report.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>报告</span></a><a class="nav" href="findings.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.01"/></svg><span>问题</span><span class="badge alert" aria-label="11 条问题未处理">11</span></a><a class="nav" href="rules.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg><span>依据</span><span class="badge" aria-label="2 条规则未确认">2</span></a><a class="nav" href="price.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5c0-1 1-1.7 2.5-1.7s2.5.7 2.5 1.7-1 1.5-2.5 1.8-2.5.8-2.5 1.8 1 1.7 2.5 1.7 2.5-.7 2.5-1.7"/></svg><span>报价</span></a><a class="nav" href="submit.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-3-7z"/></svg><span>提交与结果</span></a><a class="nav" href="materials.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>资料</span></a></nav>
+<nav class="side-sep" aria-label="工具"><div class="grp">工具</div><span class="nav static" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><span>检索</span></span><a class="nav" href="settings.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg><span>设置</span></a></nav>
+<p class="side-note">AI 产生的内容均为建议，须经人工确认</p>
+<div class="user"><span class="avatar" aria-hidden="true">王</span><div><div style="font-weight:500">王工</div></div></div></aside>
+<main class="main" id="main">
+<div class="crumb"><a href="index.html">全部项目</a> / <a href="report.html">广德市污水管网改造及新建工程</a> / 设置</div>
+
+<header class="head">
+  <div><h1>项目设置</h1><p class="lead">项目的基本信息与功能开关。只用需要的部分：除核心外的模块都可以按项目关闭或跳过。</p></div>
+</header>
+
+<section class="card pad stack" aria-labelledby="info">
+  <h2 id="info" style="font-size:17px">项目信息</h2>
+  <div class="form2">
+    <div class="field"><label for="t">项目名称</label><input id="t" type="text" value="广德市污水管网改造及新建工程"></div>
+    <div class="field"><label for="l">标段</label><input id="l" type="text" value="二标段"></div>
+    <div class="field"><label for="r">地区</label><input id="r" type="text" value="安徽 · 宣城"></div>
+    <div class="field"><label for="d">投标截止</label><input id="d" type="text" value="2026-10-14 09:30"></div>
+  </div>
+</section>
+
+<section class="card pad stack" aria-labelledby="fs">
+  <div class="card-h"><h2 id="fs">功能开关</h2><span class="sm muted">默认全部开启，只有“规则按原文接受”默认关闭</span></div>
+  <p class="sm muted">废标／否决检测、响应矩阵与证据溯源是核心，没有开关；未处理的关键问题和废标／强制响应类问题始终阻止登记提交。</p>
+  <ul class="switches">
+    <li class="switch-row"><input class="sw-box" type="checkbox" id="sw-auto_start" aria-describedby="sw-auto_start-d" checked><span class="sw-text"><label for="sw-auto_start">资料齐了自动开始评审</label><span id="sw-auto_start-d" class="sm muted">关闭后资料照常解析，评审等你在报告页点“开始评审”，避免资料没传完就开始。</span></span><span class="chip c-ok">开</span></li>
+    <li class="switch-row"><input class="sw-box" type="checkbox" id="sw-accept_rules_as_written" aria-describedby="sw-accept_rules_as_written-d"><span class="sw-text"><label for="sw-accept_rules_as_written">规则按原文接受</label><span id="sw-accept_rules_as_written-d" class="sm muted">开启后，未人工确认的废标／否决／强制类规则按模型提取的原文接受，不再阻止登记提交。把关强度降低，适合非常熟悉的标段。</span></span><span class="chip c-muted">关</span></li>
+    <li class="switch-row"><input class="sw-box" type="checkbox" id="sw-consistency_check" aria-describedby="sw-consistency_check-d" checked><span class="sw-text"><label for="sw-consistency_check">前后矛盾检测</label><span id="sw-consistency_check-d" class="sm muted">同一个量在正文不同位置取值不同、大段重复。关闭后报告不出现这一类。</span></span><span class="chip c-ok">开</span></li>
+    <li class="switch-row"><input class="sw-box" type="checkbox" id="sw-scope_check" aria-describedby="sw-scope_check-d" checked><span class="sw-text"><label for="sw-scope_check">范围残留检测</label><span id="sw-scope_check-d" class="sm muted">正文出现招标文件里没有的工程对象，多为套用其他项目模板。关闭后报告不出现这一类。</span></span><span class="chip c-ok">开</span></li>
+    <li class="switch-row"><input class="sw-box" type="checkbox" id="sw-show_score" aria-describedby="sw-show_score-d" checked><span class="sw-text"><label for="sw-show_score">显示预测分数</label><span id="sw-show_score-d" class="sm muted">关闭后报告只列可能的失分点，不显示分数估计与区间（预测照常进行）。</span></span><span class="chip c-ok">开</span></li>
+    <li class="switch-row"><input class="sw-box" type="checkbox" id="sw-price" aria-describedby="sw-price-d"><span class="sw-text"><label for="sw-price">报价模块</label><span id="sw-price-d" class="sm muted">报价由其他部门负责时可以关闭，导航和报告里不再出现报价。</span></span><span class="chip c-warn">开 → 关（未保存）</span></li>
+    <li class="switch-row"><input class="sw-box" type="checkbox" id="sw-outcome_tracking" aria-describedby="sw-outcome_tracking-d" checked><span class="sw-text"><label for="sw-outcome_tracking">提示登记开标结果</label><span id="sw-outcome_tracking-d" class="sm muted">开标结果用来校准预测；关闭后提交后不再提示登记。</span></span><span class="chip c-ok">开</span></li>
+  </ul>
+  <div class="banner info"><span><b>将修改：</b>报价模块（关闭后导航与报告不再出现报价；已保存的报价方案保留，重新打开即可恢复）。</span></div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-primary" type="button">保存开关</button><button class="btn btn-outline" type="button">放弃修改</button></div>
+  <p class="sm muted">每次修改都留有记录。</p>
+</section>
+
+</main>
+</div>
+
+</body>
+</html>
