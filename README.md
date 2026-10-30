@@ -25,6 +25,6 @@
 | [settings.html](settings.html) | 项目设置：项目信息与功能开关（自动开始评审、规则按原文接受、两类检测、显示预测分数、报价模块、提示登记开标结果），核心能力无开关 |
 | [pipeline.html](pipeline.html) | 流水线状态：评审中断与重试、评审进行中、资料更新提示、等待手动开始、资料待补充、报告尚未生成 |
 
-[styles.css](styles.css) 为各页共用的令牌（浅色与深色两套，与 tender-app 前端的设计令牌一致）与组件样式。`screenshots/` 为各页在 1440 像素宽度下的渲染图。页面不需要构建依赖；字体通过 Google Fonts 加载，离线时使用系统字体；报价页、问题页等的交互使用少量内联脚本。
+[styles.css](styles.css) 为各页共用的令牌（浅色与深色两套，与 tender-app 前端的设计令牌一致）与组件样式。`screenshots/` 为各页在 1440 像素宽度下的渲染图。页面不需要构建依赖；字体以固定 Fontsource 包自托管，离线也可加载三字体，来源与许可见 [本地字体说明](assets/fonts/README.md)；报价页、问题页等的交互使用少量内联脚本。
 
 页面规范（信息架构、交互、视觉与可访问性）见 [tender-docs 的交互与视觉设计](https://github.com/zys743551828-art/tender-docs/blob/main/05-技术与设计/交互与视觉设计.md)；实现见 [tender-app/frontend](https://github.com/zys743551828-art/tender-app/tree/main/frontend)。

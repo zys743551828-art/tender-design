@@ -1,0 +1,38 @@
+{
+  "acquired_at": "2026-10-30",
+  "inter_and_noto_sans_sc": {
+    "copy_from": "tender-app-dev/workbench/apps/web/public/fonts/fusion",
+    "policy": "Donor font/CSS/license/metadata/source bytes retained unchanged; no duplicate file-hash manifest.",
+    "donor_sources_sha256": "3362378b08de04e83e4dc0c2a34c10574f69869ed61d116d3841b1fad9a5277c"
+  },
+  "noto_serif_sc": {
+    "name": "@fontsource-variable/noto-serif-sc",
+    "version": "5.3.1",
+    "metadata_url": "https://registry.npmjs.org/@fontsource-variable%2Fnoto-serif-sc/5.3.1",
+    "metadata_file": "serif-sources/npm-metadata-5.3.1.json",
+    "tarball_url": "https://registry.npmjs.org/@fontsource-variable/noto-serif-sc/-/noto-serif-sc-5.3.1.tgz",
+    "integrity": "sha512-aIHcBaL13QctVaJFeT6wqfgO9Rq/cNtD5g2ob4ze59fYPYwacGthnIrHBe83kDpMEB/k6VGtGc6fS99RImcoSQ==",
+    "integrity_verified": true,
+    "tarball_sha1": "202dac5d50bcbf5e5f3dd5dd5a24e5de259f114d",
+    "tarball_sha256": "ddadf818338639236bf2b968991856e2dfd788b2bdcb8aa62efe89161eb0a6b9",
+    "font_count": 101,
+    "policy": "All normal fonts/unicode ranges referenced by original index.css, original bytes; no text subsetting.",
+    "license": "OFL-1.1"
+  },
+  "integration": {
+    "css": "fonts.css",
+    "html": [
+      "findings.html",
+      "index.html",
+      "materials.html",
+      "metrics.html",
+      "pipeline.html",
+      "price.html",
+      "report.html",
+      "rules.html",
+      "settings.html",
+      "submit.html"
+    ],
+    "policy": "Retain original Inter/Noto Sans SC/Noto Serif SC CSS family names and original weight/style/unicode-range declarations; only aliases and local URL prefixes differ from upstream source CSS."
+  }
+}
