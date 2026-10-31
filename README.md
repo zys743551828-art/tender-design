@@ -1,12 +1,12 @@
 > 后续开发使用 `dev` 并跟踪 `origin/dev`；原 fusion/handoff 分支保留为来源。下列交接分支要求属于历史记录。
 
-> 当前工作交接请先读 [HANDOFF-20261017.md](HANDOFF-20261017.md)，并切换到`handoff/2026-10-17`分支。以下历史说明保留原范围。
+> Historical handoff: [HANDOFF-20261017.md](HANDOFF-20261017.md) records the former branch and scope. Continue on `dev`; use the [current installation and operation manual](https://github.com/zys743551828-art/tender-docs/blob/dev/使用说明.md) for the delivered workbench.
 
 # tender-design
 
 施组工作台既有实现的界面设计稿：十个可直接在浏览器中打开的静态页面，使用虚构的项目与数据（以“广德市污水管网改造及新建工程”为主线，各页数字一致）。
 
-目标产品采用GovDash式项目工作区、章节编制、随页助手和版本导出，目标规范及布局示意见[交互与视觉设计](https://github.com/zys743551828-art/tender-docs/blob/main/05-技术与设计/交互与视觉设计.md)。本仓库十个HTML页面保存既有基线，尚未按目标重做。
+目标产品采用GovDash式项目工作区、章节编制、随页助手和版本导出，目标规范及布局示意见[交互与视觉设计](https://github.com/zys743551828-art/tender-docs/blob/dev/05-技术与设计/交互与视觉设计.md)。本仓库十个HTML页面保存既有基线，尚未按目标重做。
 
 既有信息架构：全局为项目与度量；项目内导航依次为报告（落地页）、问题、依据、报价、提交与结果、资料，工具为检索与设置。系统只有登录一道门，不区分岗位，所有成员看到的是同一套页面。
 
@@ -27,4 +27,4 @@
 
 [styles.css](styles.css) 为各页共用的令牌（浅色与深色两套，与 tender-app 前端的设计令牌一致）与组件样式。`screenshots/` 为各页在 1440 像素宽度下的渲染图。页面不需要构建依赖；字体以固定 Fontsource 包自托管，离线也可加载三字体，来源与许可见 [本地字体说明](assets/fonts/README.md)；报价页、问题页等的交互使用少量内联脚本。
 
-页面规范（信息架构、交互、视觉与可访问性）见 [tender-docs 的交互与视觉设计](https://github.com/zys743551828-art/tender-docs/blob/main/05-技术与设计/交互与视觉设计.md)；实现见 [tender-app/frontend](https://github.com/zys743551828-art/tender-app/tree/main/frontend)。
+页面规范（信息架构、交互、视觉与可访问性）见 [tender-docs 的交互与视觉设计](https://github.com/zys743551828-art/tender-docs/blob/dev/05-技术与设计/交互与视觉设计.md)；实现见 [tender-app/workbench/apps/web](https://github.com/zys743551828-art/tender-app/tree/dev/workbench/apps/web)。
